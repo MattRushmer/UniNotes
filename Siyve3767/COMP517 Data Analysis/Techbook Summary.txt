@@ -1,0 +1,33 @@
+========================================================
+TECHBOOK SUMMARY - COMP517 DATA ANALYSIS
+========================================================
+Course : COMP517 - Data Analysis
+Source : 1 techbook citation from the "Uni Techbooks" RIS export
+Date   : 12 Aug 2026
+
+NOTE ON SOURCES
+- Citation details come from your RIS file.
+- "What it covers" notes are from general knowledge (RIS = metadata only).
+
+--------------------------------------------------------
+1) DATA WRANGLING WITH PYTHON: TIPS AND TOOLS TO MAKE YOUR LIFE EASIER
+--------------------------------------------------------
+Authors ....... Jacqueline Kazil, Katharine Jarmul
+Publisher ..... O'Reilly Media (2016)
+ISBN .......... 9781491948774
+Access ........ https://ebookcentral.proquest.com/lib/aut/reader.action?docID=4543981&ppg=1&c=UERG
+
+What it covers (general knowledge):
+A hands-on guide to the messy first stage of data analysis:
+- Python fundamentals and the data science toolchain
+- Collecting data: files, web scraping, APIs, databases
+- Cleaning and transforming data with numpy and pandas
+- Merging, reshaping, aggregating, and exporting datasets
+- Practical recipes for real-world data problems
+
+Why it matches this course:
+Directly supports the COMP517 labs (Lab 01-04), which involve working
+with real datasets in Python.
+
+Files in this folder:
+  Techbooks/Data Wrangling with Python.ris

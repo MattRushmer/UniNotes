@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "id": "h63",
+      "type": "text",
+      "text": "## Lectures",
+      "x": 30,
+      "y": 20,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "c64",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Notes/Week 01 - Introduction to Data Analysis.md",
+      "x": 30,
+      "y": 120,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c65",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Notes/Week 03 - Exploratory Data Analysis.md",
+      "x": 30,
+      "y": 345,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "h66",
+      "type": "text",
+      "text": "## Assignments",
+      "x": 370,
+      "y": 20,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "c67",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Assignments/Assignment 1 Research.md",
+      "x": 370,
+      "y": 120,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c68",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Assignments/Assignment 1/Assignment 1_S2_2026.pdf",
+      "x": 370,
+      "y": 345,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c69",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Notes/Lab 01 - Basic Python Programming.md",
+      "x": 370,
+      "y": 570,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c70",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Notes/Lab 02 - NumPy and pandas.md",
+      "x": 370,
+      "y": 795,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c71",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Notes/Lab 04 - Univariate Visualisation.md",
+      "x": 370,
+      "y": 1020,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "h72",
+      "type": "text",
+      "text": "## Readings and Research",
+      "x": 710,
+      "y": 20,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "c73",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Research.md",
+      "x": 710,
+      "y": 120,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c74",
+      "type": "file",
+      "file": "COMP517 Data Analysis/Techbooks/Data Wrangling with Python.ris",
+      "x": 710,
+      "y": 345,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "h75",
+      "type": "text",
+      "text": "## Other",
+      "x": 1050,
+      "y": 20,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "c76",
+      "type": "text",
+      "text": "### Datasets - CHOOSE ONE\n\nTwo options: Global Air Quality 2023 (30k rows, messy) OR Gen Z Mental Wellness (10k rows, synthetic). Only one is needed for the assignment.",
+      "x": 1050,
+      "y": 120,
+      "width": 300,
+      "height": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "e77",
+      "fromNode": "c65",
+      "fromSide": "right",
+      "toNode": "c67",
+      "toSide": "left",
+      "label": "The assignment is an EDA exercise"
+    },
+    {
+      "id": "e78",
+      "fromNode": "c70",
+      "fromSide": "right",
+      "toNode": "c67",
+      "toSide": "left",
+      "label": "pandas skills required"
+    },
+    {
+      "id": "e79",
+      "fromNode": "c71",
+      "fromSide": "right",
+      "toNode": "c67",
+      "toSide": "left",
+      "label": "Plotting skills required"
+    },
+    {
+      "id": "e80",
+      "fromNode": "c73",
+      "fromSide": "right",
+      "toNode": "c67",
+      "toSide": "left",
+      "label": "Hub feeds assignment research"
+    }
+  ]
+}

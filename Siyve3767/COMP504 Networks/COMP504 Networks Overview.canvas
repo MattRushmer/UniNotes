@@ -1,0 +1,39 @@
+{
+	"nodes":[
+		{"id":"h1","type":"text","text":"## Lectures","x":30,"y":20,"width":300,"height":60},
+		{"id":"c2","type":"file","file":"COMP504 Networks/Notes/Ch01 - Introduction.md","x":30,"y":120,"width":300,"height":200},
+		{"id":"c3","type":"file","file":"COMP504 Networks/Notes/Ch05 - Transport Layer Part 1.md","x":30,"y":345,"width":300,"height":200},
+		{"id":"c4","type":"file","file":"COMP504 Networks/Notes/Ch05 - Transport Layer Part 2.md","x":30,"y":570,"width":300,"height":200},
+		{"id":"c5","type":"file","file":"COMP504 Networks/Notes/Ch07 - Wired and Wireless LANs.md","x":30,"y":795,"width":300,"height":200},
+		{"id":"c6","type":"file","file":"COMP504 Networks/Notes/Ch08 - Backbone Networks.md","x":30,"y":1020,"width":300,"height":200},
+		{"id":"c7","type":"file","file":"COMP504 Networks/Notes/Ch09 - Wide Area Networks.md","x":30,"y":1245,"width":300,"height":200},
+		{"id":"c8","type":"file","file":"COMP504 Networks/Notes/Ch11 - Network Security.md","x":30,"y":1470,"width":300,"height":200},
+		{"id":"c9","type":"file","file":"COMP504 Networks/Notes/Number Systems.md","x":30,"y":1695,"width":300,"height":200},
+		{"id":"c10","type":"file","file":"COMP504 Networks/Notes/Default Gateway.md","x":30,"y":1920,"width":300,"height":200},
+		{"id":"h11","type":"text","text":"## Assignments","x":370,"y":20,"width":300,"height":60},
+		{"id":"c12","type":"file","file":"COMP504 Networks/Notes/Lab 01 - Ethernet Cable Configuration.md","x":370,"y":120,"width":300,"height":200},
+		{"id":"c13","type":"file","file":"COMP504 Networks/Notes/What are Ethernet Crossover Cables.md","x":370,"y":345,"width":300,"height":200},
+		{"id":"c14","type":"file","file":"COMP504 Networks/Notes/Identifying IPv4 Addresses - Examples.md","x":370,"y":570,"width":300,"height":200},
+		{"id":"c15","type":"file","file":"COMP504 Networks/Labs/Lab Submissions/Done/Week 3/Lab Notes - Week 3.md","x":370,"y":795,"width":300,"height":200},
+		{"id":"c16","type":"file","file":"COMP504 Networks/Labs/Lab Submissions/Done/Week 4/Lab Notes - Week 4.md","x":370,"y":1020,"width":300,"height":200},
+		{"id":"c17","type":"file","file":"COMP504 Networks/Labs/Lab Submissions/Week 8/Lab Notes - Week 8.md","x":370,"y":1245,"width":300,"height":200},
+		{"id":"c18","type":"file","file":"COMP504 Networks/Labs/Lab Submissions/Week 9/Lab Notes - Week 9.md","x":370,"y":1470,"width":300,"height":200},
+		{"id":"c19","type":"file","file":"COMP504 Networks/Labs/Lab Submissions/Week 10/Lab Notes - Week 10.md","x":370,"y":1695,"width":300,"height":200},
+		{"id":"h20","type":"text","text":"## Readings and Research","x":710,"y":20,"width":300,"height":60},
+		{"id":"c21","type":"file","file":"COMP504 Networks/Notes/VLSM Subnetting - Block Method.md","x":710,"y":120,"width":300,"height":200},
+		{"id":"c22","type":"file","file":"COMP504 Networks/Research.md","x":710,"y":345,"width":300,"height":200},
+		{"id":"c23","type":"file","file":"COMP504 Networks/Techbooks/Business Data Communications and Networking.ris","x":710,"y":570,"width":300,"height":200},
+		{"id":"h24","type":"text","text":"## Other","x":1050,"y":20,"width":300,"height":60},
+		{"id":"c25","type":"file","file":"COMP504 Networks/Notes/FINAL EXAM Revision (2026).md","x":1050,"y":120,"width":300,"height":200},
+		{"id":"c26","type":"file","file":"COMP504 Networks/Exam Prep/FINAL EXAM Revision (2026).pptx","x":1050,"y":345,"width":300,"height":200}
+	],
+	"edges":[
+		{"id":"e27","fromNode":"c21","fromSide":"right","toNode":"c18","toSide":"left","label":"VLSM method applied in lab"},
+		{"id":"e28","fromNode":"c10","fromSide":"right","toNode":"c17","toSide":"left","label":"Lab troubleshoots this topic"},
+		{"id":"e29","fromNode":"c3","fromSide":"right","toNode":"c16","toSide":"left","label":"TCP/IP + OSI in simulation"},
+		{"id":"e30","fromNode":"c9","fromSide":"right","toNode":"c21","toSide":"left","label":"Binary basics for 2^n blocks"},
+		{"id":"e31","fromNode":"c25","fromSide":"right","toNode":"c2","toSide":"left","label":"Exam hub: course foundation"},
+		{"id":"e32","fromNode":"c25","fromSide":"right","toNode":"c8","toSide":"left","label":"Exam hub: security topics"},
+		{"id":"e33","fromNode":"c25","fromSide":"right","toNode":"c9","toSide":"left","label":"Exam hub: binary/subnetting"}
+	]
+}

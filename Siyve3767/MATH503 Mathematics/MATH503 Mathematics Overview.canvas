@@ -1,0 +1,173 @@
+{
+  "nodes": [
+    {
+      "id": "h81",
+      "type": "text",
+      "text": "## Lectures",
+      "x": 30,
+      "y": 20,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "c82",
+      "type": "file",
+      "file": "MATH503 Mathematics/Notes/Week 03 - Conditional Probability.md",
+      "x": 30,
+      "y": 120,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c83",
+      "type": "file",
+      "file": "MATH503 Mathematics/Notes/Week 04 - Permutations and Counting.md",
+      "x": 30,
+      "y": 345,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c84",
+      "type": "file",
+      "file": "MATH503 Mathematics/Notes/Week 05 - Statistical Measures.md",
+      "x": 30,
+      "y": 570,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c85",
+      "type": "file",
+      "file": "MATH503 Mathematics/Notes/Week 06 - Binomial Distribution.md",
+      "x": 30,
+      "y": 795,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "h86",
+      "type": "text",
+      "text": "## Assignments",
+      "x": 370,
+      "y": 20,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "c87",
+      "type": "text",
+      "text": "### No assignments filed yet\n\nNo assignment or problem-set notes exist in this folder yet.",
+      "x": 370,
+      "y": 120,
+      "width": 300,
+      "height": 150
+    },
+    {
+      "id": "h88",
+      "type": "text",
+      "text": "## Readings and Research",
+      "x": 710,
+      "y": 20,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "c89",
+      "type": "file",
+      "file": "MATH503 Mathematics/Research.md",
+      "x": 710,
+      "y": 120,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c90",
+      "type": "file",
+      "file": "MATH503 Mathematics/Techbooks/Finite Mathematics - Lial (11th ed, 2016).ris",
+      "x": 710,
+      "y": 345,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c91",
+      "type": "file",
+      "file": "MATH503 Mathematics/Techbooks/Finite Mathematics - Tan (12th ed, 2018).ris",
+      "x": 710,
+      "y": 570,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "h92",
+      "type": "text",
+      "text": "## Other",
+      "x": 1050,
+      "y": 20,
+      "width": 300,
+      "height": 60
+    },
+    {
+      "id": "c93",
+      "type": "file",
+      "file": "MATH503 Mathematics/Notes/Week 04 - Notes.pdf",
+      "x": 1050,
+      "y": 120,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c94",
+      "type": "file",
+      "file": "MATH503 Mathematics/Notes/Week 04 - Notes (image scan).md",
+      "x": 1050,
+      "y": 345,
+      "width": 300,
+      "height": 200
+    },
+    {
+      "id": "c95",
+      "type": "text",
+      "text": "### MISSING: Week 7 (normal distribution / z-scores)\n\nResearch hub flags Week 7 as missing from the vault - check Canvas for the lecture.",
+      "x": 1050,
+      "y": 570,
+      "width": 300,
+      "height": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "e96",
+      "fromNode": "c83",
+      "fromSide": "right",
+      "toNode": "c85",
+      "toSide": "left",
+      "label": "nCr needed for binomial coefficient"
+    },
+    {
+      "id": "e97",
+      "fromNode": "c84",
+      "fromSide": "right",
+      "toNode": "c85",
+      "toSide": "left",
+      "label": "Mean/variance basis for distributions"
+    },
+    {
+      "id": "e98",
+      "fromNode": "c82",
+      "fromSide": "right",
+      "toNode": "c84",
+      "toSide": "left",
+      "label": "Probability to statistics progression"
+    },
+    {
+      "id": "e99",
+      "fromNode": "c89",
+      "fromSide": "right",
+      "toNode": "c93",
+      "toSide": "left",
+      "label": "OCR to-do flagged in hub"
+    }
+  ]
+}

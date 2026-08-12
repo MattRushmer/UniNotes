@@ -1,0 +1,56 @@
+/* Course folder colors for the file explorer sidebar */
+/* Matches the Graph View color groups in .obsidian/graph.json */
+
+/* ===== COMP504 Networks — Blue #3B82F6 ===== */
+.nav-folder-title[data-path="COMP504 Networks"],
+.nav-folder-title[data-path="COMP504 Networks/Exam Prep"],
+.nav-folder-title[data-path="COMP504 Networks/Labs"],
+.nav-folder-title[data-path="COMP504 Networks/Lectures"],
+.nav-folder-title[data-path="COMP504 Networks/Notes"],
+.nav-folder-title[data-path="COMP504 Networks/Reference"],
+.nav-folder-title[data-path="COMP504 Networks/Techbooks"] {
+  color: #3B82F6;
+  font-weight: 600;
+}
+.nav-file-title[data-path^="COMP504 Networks/"] {
+  color: #3B82F6;
+}
+
+/* ===== COMP507 IT Project Management — Orange #E67E30 ===== */
+.nav-folder-title[data-path="COMP507 IT Project Management"],
+.nav-folder-title[data-path="COMP507 IT Project Management/Case Studies"],
+.nav-folder-title[data-path="COMP507 IT Project Management/Lectures"],
+.nav-folder-title[data-path="COMP507 IT Project Management/Notes"],
+.nav-folder-title[data-path="COMP507 IT Project Management/Techbooks"],
+.nav-folder-title[data-path="COMP507 IT Project Management/Tutorials"] {
+  color: #E67E30;
+  font-weight: 600;
+}
+.nav-file-title[data-path^="COMP507 IT Project Management/"] {
+  color: #E67E30;
+}
+
+/* ===== COMP517 Data Analysis — Green #279325 ===== */
+.nav-folder-title[data-path="COMP517 Data Analysis"],
+.nav-folder-title[data-path="COMP517 Data Analysis/Labs"],
+.nav-folder-title[data-path="COMP517 Data Analysis/Lectures"],
+.nav-folder-title[data-path="COMP517 Data Analysis/Notes"],
+.nav-folder-title[data-path="COMP517 Data Analysis/Techbooks"] {
+  color: #279325;
+  font-weight: 600;
+}
+.nav-file-title[data-path^="COMP517 Data Analysis/"] {
+  color: #279325;
+}
+
+/* ===== MATH503 Mathematics — Purple #8E44AD ===== */
+.nav-folder-title[data-path="MATH503 Mathematics"],
+.nav-folder-title[data-path="MATH503 Mathematics/Lectures"],
+.nav-folder-title[data-path="MATH503 Mathematics/Notes"],
+.nav-folder-title[data-path="MATH503 Mathematics/Techbooks"] {
+  color: #8E44AD;
+  font-weight: 600;
+}
+.nav-file-title[data-path^="MATH503 Mathematics/"] {
+  color: #8E44AD;
+}

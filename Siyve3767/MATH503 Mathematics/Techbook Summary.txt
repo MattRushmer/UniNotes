@@ -1,0 +1,59 @@
+========================================================
+TECHBOOK SUMMARY - MATH503 MATHEMATICS
+========================================================
+Course : MATH503 - Mathematics
+Source : 4 citations from the "Uni Techbooks" RIS export
+Date   : 12 Aug 2026
+
+NOTE ON SOURCES
+- Citation details come from your RIS files.
+- "What it covers" notes are from general knowledge (RIS = metadata only).
+- DUPLICATE EDITIONS: the export contains TWO editions of Lial's
+  "Finite Mathematics" and TWO editions of Tan's "Finite Mathematics...".
+  Recommended: keep the LATEST edition of each (see notes below).
+
+--------------------------------------------------------
+1) FINITE MATHEMATICS - Lial, Greenwell & Ritchey, 11th ed (2016)
+--------------------------------------------------------
+Authors ....... Margaret L. Lial, Raymond N. Greenwell, Nathan P. Ritchey
+Edition ....... 11th edition
+Publisher ..... Pearson (2016)
+ISBN .......... 9780321979438
+Status ........ Optional
+
+2) FINITE MATHEMATICS - Lial, Greenwell & Ritchey, 9th ed (2008)
+   Older edition (Pearson 2008, ISBN 9780321428295).
+   Suggest keeping only the 11th ed unless your notes reference this one.
+
+--------------------------------------------------------
+3) FINITE MATHEMATICS FOR THE MANAGERIAL, LIFE, AND SOCIAL SCIENCES - Tan, 12th ed (2018)
+--------------------------------------------------------
+Authors ....... Soo Tang Tan
+Edition ....... 12th edition (marked "Latest edition" in your export)
+Publisher ..... Cengage Learning (2018)
+ISBN .......... 9781337405782 / 9781337613699
+Status ........ Optional
+
+4) FINITE MATHEMATICS FOR THE MANAGERIAL, LIFE, AND SOCIAL SCIENCES - Tan, 10th ed (2012)
+   Older edition (Cengage 2012, ISBN 9780840048141).
+   Suggest keeping only the 12th ed unless needed.
+--------------------------------------------------------
+What both titles cover (general knowledge):
+Standard finite mathematics for business/social sciences:
+- Linear functions, equations, and models
+- Systems of equations and matrices (Gauss-Jordan, inverses)
+- Linear programming (graphical and simplex methods)
+- Mathematics of finance (interest, annuities, amortization)
+- Sets, counting, and probability (incl. conditional probability, Bayes)
+- Statistics: describing data, distributions, and inference
+- Markov chains and game theory
+
+Why it matches this course:
+MATH503 Weeks 3-6 lecture topics align with the algebra, probability,
+and finance sections of these texts.
+
+Files in this folder:
+  Techbooks/Finite Mathematics - Lial (11th ed, 2016).ris
+  Techbooks/Finite Mathematics - Lial (9th ed, 2008).ris
+  Techbooks/Finite Mathematics - Tan (12th ed, 2018).ris
+  Techbooks/Finite Mathematics - Tan (10th ed, 2012).ris

@@ -1,0 +1,74 @@
+========================================================
+TECHBOOK SUMMARY - COMP507 IT PROJECT MANAGEMENT
+========================================================
+Course : COMP507 - IT Project Management
+Source : 3 citations from the "Uni Techbooks" RIS export (2 books + 1 article)
+Date   : 12 Aug 2026
+
+NOTE ON SOURCES
+- Citation details come from your RIS files.
+- "What it covers" notes are from general knowledge (RIS = metadata only).
+
+--------------------------------------------------------
+1) INFORMATION TECHNOLOGY PROJECT MANAGEMENT
+--------------------------------------------------------
+Authors ....... Kathy Schwalbe
+Edition ....... 9th edition
+Publisher ..... Cengage (2019)
+ISBN .......... 9781337515856
+Status ........ ESSENTIAL
+Access ........ https://ebookcentral.proquest.com/lib/aut/reader.action?docID=6351287&ppg=1&c=UERG
+
+What it covers (general knowledge):
+The standard IT project management textbook:
+- The PM framework and project lifecycle
+- All 10 PMBOK knowledge areas applied to IT: scope, schedule, cost,
+  quality, resources, communications, risk, procurement, stakeholder,
+  and integration management
+- Process groups: initiating, planning, executing, monitoring &
+  controlling, closing
+- PM software/tools and an introduction to agile methods
+
+Why it matches this course:
+Your lecture set maps onto the same knowledge areas (Week 1 intro,
+Week 2 lifecycle, Week 4 stakeholders, Week 5 risk, Week 6 scope &
+schedule, plus Communication, Quality, Cost, Resource).
+
+--------------------------------------------------------
+2) A GUIDE TO THE PROJECT MANAGEMENT BODY OF KNOWLEDGE (PMBOK GUIDE)
+--------------------------------------------------------
+Author ........ Project Management Institute (PMI)
+Edition ....... 6th edition
+Publisher ..... PMI (2017)
+ISBN .......... 9781628254679
+Status ........ ESSENTIAL
+Access ........ https://ebookcentral.proquest.com/lib/aut/reader.action?docID=5180849&ppg=1&c=UERG
+
+What it covers (general knowledge):
+The PMI industry standard:
+- 5 process groups and 10 knowledge areas with inputs, tools &
+  techniques, and outputs (ITTOs)
+- Role of the project manager, project charter, baselines, earned
+  value management, quality and risk processes
+- Foundation for PMP certification and for how the lectures are framed
+
+--------------------------------------------------------
+3) BEYOND THE GENERALIST: THE OVERLOOKED IMPORTANCE OF TECHNICAL EXPERTISE IN IT PROJECT MANAGEMENT
+--------------------------------------------------------
+Authors ....... Stephen J. Thorpe, Livia Krstic
+Journal ....... Int. Journal of Information Technology Project Management
+Vol/Issue ..... 16(1), pp. 1-23
+Publisher ..... IGI Global (2025)
+DOI ........... 10.4018/IJITPM.398627
+Status ........ OPTIONAL reading
+Access ........ https://www-igi-global-com.ezproxy.aut.ac.nz/gateway/article/full-text-pdf/398627
+
+Topic (inferred from title and DOI - article not yet read):
+Argues that hands-on technical expertise is undervalued in IT project
+management relative to generalist PM skills - relevant to discussions
+of the PM role and what makes IT projects succeed or fail.
+
+Files in this folder:
+  Techbooks/Information Technology Project Management - Schwalbe.ris
+  Techbooks/PMBOK Guide (6th ed).ris
+  Techbooks/Beyond the Generalist - Technical Expertise in ITPM.ris

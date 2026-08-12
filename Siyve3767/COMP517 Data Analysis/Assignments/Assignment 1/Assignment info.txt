@@ -1,0 +1,32 @@
+Task Overview  
+This report is to be submitted via Turnitin (which is inbuilt in Canvas submission system).
+
+
+Course Learning Outcome Assessed
+LO1 - Apply knowledge and skills to solve a range of data analysis problems involving small to medium scale datasets.
+
+LO2 - Communicate the results of their analysis accurately and reliably, with structured and coherent arguments.
+
+
+
+
+
+Suggested Procedures  
+Download the Assignment One S2 2026.pdfDownload Assignment One S2 2026.pdf for detailed information on assignment 1.
+Download Dataset 1 
+Global Air Quality 2023 Global Air Quality 2023 (Messy from WAQI786)
+
+About this file: For information about the dataset, read the metadata about the dataset given on the website
+
+Download Dataset 2 
+      Gen Z Mental Wellness & Digital Lifestyle Patterns Dataset Gen Z Mental Wellness & Digital Lifestyle Patterns
+
+      About this file: For information about the dataset, read the metadata about the dataset         given on the website
+
+Download Assignment One cover sheet S2 2026.docxDownload Assignment One cover sheet S2 2026.docx
+Submission Information
+You need to upload two submissions separately (do not zip them) 
+
+Upload your Assignment 1 report (docx or pdf format). Word limit 5000 words.
+Upload your Python Code File (.ipynb or .py)
+ 

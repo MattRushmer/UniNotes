@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "a117211118526389",
+    "type": "split",
+    "children": [
+      {
+        "id": "261997a286fbd127",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a221f80cdf25836",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f053c93316b9acd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1990c84a303ffe9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7af2b2677e88f8ff",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ef3a1f9d78c1db94",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "cedb95a919df89ed",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 283.5
+  },
+  "right": {
+    "id": "f61f094f52934c42",
+    "type": "split",
+    "children": [
+      {
+        "id": "f94aefb7170bfb8d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7965c73e528bc15c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Notes"
+            }
+          },
+          {
+            "id": "3ea55f28950c5862",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Notes"
+            }
+          },
+          {
+            "id": "4146b5727bb02d02",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "632aace128068eb0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "ab634c458a503cae",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notes.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Notes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "5a221f80cdf25836",
+  "lastOpenFiles": [
+    "Home.md",
+    "COMP507 IT Project Management/COMP507 IT Project Management Overview.canvas",
+    "COMP504 Networks/COMP504 Networks Overview.canvas",
+    "COMP504 Networks/Index.md",
+    "COMP504 Networks/Research.md",
+    "MATH503 Mathematics/MATH503 Mathematics Overview.canvas",
+    "COMP517 Data Analysis/COMP517 Data Analysis Overview.canvas",
+    "Uni info/_tmp/gen_canvases.py",
+    "Uni info/_tmp",
+    "COMP504 Networks/Labs/Lab Submissions/Week 9/Lab Notes - Week 9.md",
+    "COMP504 Networks/Labs/Lab Submissions/Week 8/Lab Notes - Week 8.md",
+    "COMP504 Networks/Labs/Lab Submissions/Week 10/Lab Notes - Week 10.md",
+    "COMP504 Networks/Labs/Lab Submissions/Done/Week 4/Lab Notes - Week 4.md",
+    "COMP504 Networks/Labs/Lab Submissions/Done/Week 3/Lab Notes - Week 3.md",
+    "Uni info/_tmp/labnotes/week10.md",
+    "Uni info/_tmp/labnotes/week9.md",
+    "Uni info/_tmp/labnotes/week8.md",
+    "Uni info/_tmp/labnotes/week4.md",
+    "Uni info/_tmp/labnotes/week3.md",
+    "Uni info/_tmp/labnotes",
+    "COMP504 Networks/Labs/Lab Submissions/Week 9/Packet Tracer - IPv4 VLSM Design and Implementation.pka",
+    "COMP504 Networks/Labs/Lab Submissions/Week 9/Packet Tracer - IPv4 VLSM Design and Implementation.docx",
+    "COMP504 Networks/Labs/Lab Submissions/Week 9/Example-Design and Implement a VLSM Addressing Scheme.docx",
+    "COMP504 Networks/Labs/Lab Submissions/Week 9",
+    "COMP504 Networks/Labs/Lab Submissions/Week 8/10.3.5 Packet Tracer - Troubleshoot Default Gateway Issues.pka",
+    "COMP504 Networks/Labs/Lab Submissions/Week 8/10.3.5 Packet Tracer - Troubleshoot Default Gateway Issues.docx",
+    "COMP504 Networks/Labs/Lab Submissions/Week 8",
+    "COMP507 IT Project Management/Assignments/Assignment 1 Research.md",
+    "Inbox/README.md",
+    "COMP517 Data Analysis/Assignments/Assignment 1 Research.md",
+    "Uni info/_tmp/comp517_a1_research.md",
+    "Uni info/_tmp/comp507_a1_research.md",
+    "COMP517 Data Analysis/Assignments/Assignment 1/Dataset - Global Air Quality 2023/README.md",
+    "Inbox Processing Protocol.md",
+    "Inbox/COMP517 Assingment 1/archive/global_aqi_2023_messy_from_waqi786/README.md",
+    "Untitled.canvas",
+    "2026-08-12.md",
+    "Uni info/_tmp/inbox_protocol.md",
+    "COMP517 Data Analysis/Research.md",
+    "COMP517 Data Analysis/Index.md"
+  ]
+}

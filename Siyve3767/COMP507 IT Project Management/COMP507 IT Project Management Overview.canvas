@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"h34","type":"text","text":"## Lectures","x":30,"y":20,"width":300,"height":60},
+		{"id":"c35","type":"file","file":"COMP507 IT Project Management/Notes/Week 01 - Introduction to ITPM.md","x":30,"y":120,"width":300,"height":200},
+		{"id":"c36","type":"file","file":"COMP507 IT Project Management/Notes/Week 02 - PM Concepts, Phases and Lifecycle.md","x":30,"y":345,"width":300,"height":200},
+		{"id":"c37","type":"file","file":"COMP507 IT Project Management/Notes/Week 04 - Stakeholder Management.md","x":30,"y":570,"width":300,"height":200},
+		{"id":"c38","type":"file","file":"COMP507 IT Project Management/Notes/Week 05 - Risk Management.md","x":30,"y":795,"width":300,"height":200},
+		{"id":"c39","type":"file","file":"COMP507 IT Project Management/Notes/Week 06 - Schedule Management.md","x":30,"y":1020,"width":300,"height":200},
+		{"id":"c40","type":"file","file":"COMP507 IT Project Management/Notes/Week 06 - Scope Management.md","x":30,"y":1245,"width":300,"height":200},
+		{"id":"c41","type":"file","file":"COMP507 IT Project Management/Notes/07 - Communication Management.md","x":30,"y":1470,"width":300,"height":200},
+		{"id":"c42","type":"file","file":"COMP507 IT Project Management/Notes/08 - Quality Management.md","x":30,"y":1695,"width":300,"height":200},
+		{"id":"c43","type":"file","file":"COMP507 IT Project Management/Notes/09 - Cost Management.md","x":30,"y":1920,"width":300,"height":200},
+		{"id":"c44","type":"file","file":"COMP507 IT Project Management/Notes/12 - Resource Management.md","x":30,"y":2145,"width":300,"height":200},
+		{"id":"h45","type":"text","text":"## Assignments","x":370,"y":20,"width":300,"height":60},
+		{"id":"c46","type":"file","file":"COMP507 IT Project Management/Assignments/Assignment 1 Research.md","x":370,"y":120,"width":300,"height":200},
+		{"id":"c47","type":"file","file":"COMP507 IT Project Management/Assignments/Assignment 1/Assignment 1_S2_2026.pdf","x":370,"y":345,"width":300,"height":200},
+		{"id":"c48","type":"file","file":"COMP507 IT Project Management/Notes/Tutorial 03 - Business Case ROI Calculation.md","x":370,"y":570,"width":300,"height":200},
+		{"id":"h49","type":"text","text":"## Readings and Research","x":710,"y":20,"width":300,"height":60},
+		{"id":"c50","type":"file","file":"COMP507 IT Project Management/Research.md","x":710,"y":120,"width":300,"height":200},
+		{"id":"c51","type":"file","file":"COMP507 IT Project Management/Notes/Northwest Airlines - Case Study.md","x":710,"y":345,"width":300,"height":200},
+		{"id":"c52","type":"file","file":"COMP507 IT Project Management/Techbooks/Information Technology Project Management - Schwalbe.ris","x":710,"y":570,"width":300,"height":200},
+		{"id":"c53","type":"file","file":"COMP507 IT Project Management/Techbooks/PMBOK Guide (6th ed).ris","x":710,"y":795,"width":300,"height":200},
+		{"id":"c54","type":"file","file":"COMP507 IT Project Management/Techbooks/Beyond the Generalist - Technical Expertise in ITPM.ris","x":710,"y":1020,"width":300,"height":200},
+		{"id":"h55","type":"text","text":"## Other","x":1050,"y":20,"width":300,"height":60},
+		{"id":"c56","type":"file","file":"COMP507 IT Project Management/Assignments/Assignment 1/Business Case.odt","x":1050,"y":120,"width":300,"height":200}
+	],
+	"edges":[
+		{"id":"e57","fromNode":"c48","fromSide":"right","toNode":"c46","toSide":"left","label":"NPV/ROI for the business case"},
+		{"id":"e58","fromNode":"c37","fromSide":"right","toNode":"c46","toSide":"left","label":"Register + strategy (items 2-3)"},
+		{"id":"e59","fromNode":"c38","fromSide":"right","toNode":"c46","toSide":"left","label":"Risk register v1/v2"},
+		{"id":"e60","fromNode":"c51","fromSide":"right","toNode":"c46","toSide":"left","label":"Worked business justification"},
+		{"id":"e61","fromNode":"c40","fromSide":"right","toNode":"c46","toSide":"left","label":"Scope/WBS/critical path"},
+		{"id":"e62","fromNode":"c39","fromSide":"right","toNode":"c46","toSide":"left","label":"Schedule baseline + network diagram"}
+	]
+}

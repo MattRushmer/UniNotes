@@ -1,0 +1,38 @@
+========================================================
+TECHBOOK SUMMARY - COMP504 NETWORKS
+========================================================
+Course : COMP504 - Networks
+Source : 1 techbook citation from the "Uni Techbooks" RIS export
+Date   : 12 Aug 2026
+
+NOTE ON SOURCES
+- Citation details (authors, edition, ISBN, links) come from your RIS file.
+- "What it covers" notes are written from general knowledge of the title -
+  RIS files contain citation metadata only, not chapter contents.
+
+--------------------------------------------------------
+1) BUSINESS DATA COMMUNICATIONS AND NETWORKING
+--------------------------------------------------------
+Authors ....... Jerry FitzGerald, Alan Dennis, Alexandra Durcikova
+Edition ....... 14th edition
+Publisher ..... Wiley (2021)
+ISBN .......... 9781119702849
+Status ........ Student Purchase (required text)
+Access ........ https://go.openathens.net/redirector/aut.ac.nz?url=https://research.ebsco.com/linkprocessor/plink?id=f96e8ad0-127f-3320-ab27-961afa9d4d7a
+
+What it covers (general knowledge - not in the RIS file):
+- Network fundamentals: components, topologies, OSI and TCP/IP models
+- Physical layer: transmission media, Ethernet, wiring standards
+- Data link and LANs: switches, VLANs, wireless LANs (Wi-Fi)
+- Network layer: IP addressing, subnetting, routing, backbone and WAN design
+- Transport and application layers: TCP/UDP, DNS, web, email
+- Network security: threats, firewalls, VPNs, encryption
+- Network management, performance, and business/cloud networking
+
+Why it matches this course:
+Its chapter structure lines up with your lecture set
+(Ch01 intro -> Ch05 transport -> Ch07 LANs -> Ch08 backbone ->
+ Ch09 WAN -> Ch11 security).
+
+Files in this folder:
+  Techbooks/Business Data Communications and Networking.ris
