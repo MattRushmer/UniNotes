@@ -54,6 +54,7 @@ tags:
 - [[COMP507 IT Project Management/Research|Research Hub]] — open questions, under-explored topics, external sources
 ## 📝 Assignments
 - [[COMP507 IT Project Management/Assignments/Assignment 1/Assignment 1_S2_2026.pdf|Assignment 1 brief (S2 2026)]] — Wiki + cloud PMS comparison, 50%
+- [[COMP507 IT Project Management/Assignments/Assignment 1/Assignment 1 Checklist|Assignment 1 Checklist]] — all 20 deliverables, marks, due dates & status
 - [[COMP507 IT Project Management/Assignments/Assignment 1 Research|Assignment 1 Research]] — PMS candidates, pricing, PMBOK mapping, links to notes
 - [[COMP507 IT Project Management/Assignments/Assignment 1/Templates|Assignment 1 Templates]] — 12 starter templates (business case, charter, registers, etc.)
 

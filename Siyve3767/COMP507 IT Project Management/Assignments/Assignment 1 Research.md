@@ -6,7 +6,7 @@ tags:
   - research
   - exam-topic
 ---
-
+								
 # COMP507 Assignment 1 — Research
 
 > Research companion for **Assignment 1 (Team Wiki Project)**, S2 2026 — worth **50%** of the final grade. Source brief: [[COMP507 IT Project Management/Assignments/Assignment 1/Assignment 1_S2_2026.pdf|Assignment 1_S2_2026.pdf]]. Everything in this note is **synthesis + external sources** — your submitted documents are your own work.
