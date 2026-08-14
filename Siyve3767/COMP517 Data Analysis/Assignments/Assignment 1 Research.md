@@ -15,6 +15,41 @@ tags:
 ## The assignment in one paragraph
 Choose **one** of two provided datasets, then run a full EDA pipeline: (1) load + summarise the dataset, (2) pre-process it — missing values, duplicates, outliers, (3) explore and visualise the clean data, (4) multivariate analysis — correlations, categorical x count aggregation, mean/median aggregation, and a BMI->risk (or credit-score->loan) relationship, (5) conclusion, (6) present it all in a structured report with figures/tables but **no code in the report** (code goes in the separate file).
 
+## Step-by-step guide
+
+> Actionable plan mapped to the mark blocks — work top to bottom; each step feeds the next. *(100 marks total)*
+
+### Step 0 — Pick your dataset (do this first)
+Read both files' metadata, then commit to **one**. [[COMP517 Data Analysis/Assignments/Assignment 1/Dataset - Global Air Quality 2023|Dataset A]] = cleaning showcase; [[COMP517 Data Analysis/Assignments/Assignment 1/Dataset - Gen Z Mental Wellness|Dataset B]] = correlation story. You only need one.
+
+### Step 1 — Load & summarise (10 marks)
+`pd.read_csv(...)`, then `df.shape`, `df.info()`, `df.describe()`, `df.head()`, check dtypes and `df.isnull().sum()`. State the dataset's size and what each column means. (See [[COMP517 Data Analysis/Notes/Lab 02 - NumPy and pandas|Lab 02 - NumPy and pandas]].)
+
+### Step 2 — Pre-processing (20 marks)
+- **Missing values:** drop vs impute — *median* for skewed numerics, mean for symmetric, mode for categoricals, `interpolate()` for date-ordered data. **Justify every choice.**
+- **Duplicates:** `df.duplicated().sum()` → check true repeats vs legit records (same city/date) → `drop_duplicates()`.
+- **Outliers:** IQR (`Q1±1.5×IQR`) and/or z-score (`|z|>3`), plus box/scatter plots. Keep real extremes, remove data-entry errors, or winsorise. Show **scatterplots of outlier vs non-outlier points**. (IQR/quartiles: [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|MATH503 W05]].)
+
+### Step 3 — Explore & visualise (25 marks)
+Histograms for numerics, bar/pie for categoricals, box plots for spread; compare mean vs median to spot skew. **Every plot: title, labelled axes, legend.** (Formatting: [[COMP517 Data Analysis/Notes/Lab 04 - Univariate Visualisation|Lab 04 - Univariate Visualisation]].)
+
+### Step 4 — Multivariate analysis (20 marks)
+- **Correlation heatmap** (`df.select_dtypes('number').corr()` + seaborn) — report strong `|r| > 0.7` pairs.
+- **Categorical × count:** pick 2 categoricals, plot how counts vary (grouped bar/heatmap).
+- **Aggregation:** `groupby(...).agg(['mean','median'])` → table + graph.
+- **"BMI→risk"-style analysis:** pick the analogous pair (e.g. screen time/sleep → wellbeing/burnout risk), show average + variation, discuss **two significances**. (Context: [[COMP517 Data Analysis/Notes/Week 03 - Exploratory Data Analysis|Week 03 - EDA]].)
+
+### Step 5 — Conclusion (15 marks)
+Summarise findings, challenges + how you fixed them, and 2–3 next steps (feature engineering, modelling, more data).
+
+### Step 6 — Write the report (10 marks for structure)
+Title + name + student ID, table of contents, list of figures/tables, answer each question, labelled figures with captions. **Keep all code in the separate file.**
+
+### Step 7 — Submit
+Upload report + code file separately (don't zip).
+
+> ⚠️ The brief's `loan_dataset.csv` / `diabetes_dataset.csv` examples are **generic placeholders** — map that style of analysis onto your chosen dataset.
+
 ## Your two datasets (verified from the files)
 
 ### Dataset A — Global Air Quality 2023 (messy)

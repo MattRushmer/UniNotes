@@ -18,7 +18,15 @@ tags:
 ## 📝 Notes
 - [[MATH503 Mathematics/Notes/Week 04 - Notes.pdf|Week 04 - Notes]]
 
-> 💡 *The vault only has Weeks 3–6 so far — earlier weeks may have been added to a different folder or are missing.*
+> 💡 *The vault only has notes for Weeks 3–6 so far — see the [[MATH503 Mathematics/Course Overview|Course Overview]] for the full 12-week schedule.*
+
+## 📖 Course Info
+- [[MATH503 Mathematics/Course Overview|Course Overview]]
+- [[MATH503 Mathematics/MATH503Combined Manual_2026_S2_2.pdf|Combined Manual (S2 2026)]]
+- [[MATH503 Mathematics/MATH503 Course Content Schedule-1.docx|Content Schedule]]
+
+## 📋 Assignments
+- [[MATH503 Mathematics/Assignments/Week 5 - Group Activity/Week 5 - Group Activity|Week 5 - Group Activity (Old Faithful)]]
 
 ## Suggested tags
 `#math503` `#mathematics`

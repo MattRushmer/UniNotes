@@ -38,7 +38,7 @@ tags:
 - [[COMP517 Data Analysis/Research|Research Hub]] — open questions, under-explored topics, external sources
 ## 📝 Assignments
 - [[COMP517 Data Analysis/Assignments/Assignment 1/Assignment 1_S2_2026.pdf|Assignment 1 brief (S2 2026)]] — Data Exploration & Analysis, due 11 Sep
-- [[COMP517 Data Analysis/Assignments/Assignment 1 Research|Assignment 1 Research]] — EDA playbook, dataset profiles, links to notes
+- [[COMP517 Data Analysis/Assignments/Assignment 1 Research|Assignment 1 Research]] — step-by-step guide, EDA playbook, dataset profiles, links to notes
 - [[COMP517 Data Analysis/Assignments/Assignment 1/Dataset - Global Air Quality 2023|Dataset - Global Air Quality 2023]] — 30k rows, deliberately messy
 - [[COMP517 Data Analysis/Assignments/Assignment 1/Dataset - Gen Z Mental Wellness|Dataset - Gen Z Mental Wellness]] — 10k rows, synthetic
 

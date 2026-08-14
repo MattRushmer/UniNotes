@@ -102,10 +102,15 @@ MATH503's own lectures repeatedly motivate probability via **data science and ma
 ## 5. Missing weeks
 
 ### Summary
-My vault only has **Weeks 3-6** for MATH503 (conditional probability, counting, statistical measures, binomial) — Weeks 1-2 and anything after Week 6 (including the promised **Week 7 normal-distribution lecture**) are absent. The Week 04 Notes PDF is also an image scan with no readable text. **Open question: are the earlier/later weeks somewhere else in the vault, on Canvas, or not yet released?**
+My vault only has **Weeks 3-6** notes for MATH503 (conditional probability, counting, statistical measures, binomial). The [[MATH503 Mathematics/Course Overview|Course Overview]] now lists the full 12-week plan, so the gaps are known:
+- Missing **Weeks 1-2**: Sets and probability, Venn diagrams
+- Missing **Weeks 7-12**: Probability distributions + hypothesis testing (7-8), relations and functions (9), matrices (10-11), review (12)
+
+The Week 04 Notes PDF is also an image scan with no readable text. **Open question: are these weeks somewhere else in the vault, on Canvas, or not yet released?**
 
 ### Links to existing notes
 - [[MATH503 Mathematics/Notes/Week 04 - Notes (image scan)|Week 04 - Notes (image scan)]] (OCR pending)
+- [[MATH503 Mathematics/Course Overview|Course Overview]] (full 12-week schedule)
 - [[MATH503 Mathematics/Index|Course Index]] (missing-weeks warning)
 - [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|Week 06]] (points forward to Week 7)
 
