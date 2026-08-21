@@ -39,5 +39,8 @@ tags:
 - Student Services App: classify risks by knowledge area (mobile dev inexperience, API access unapproved, new framework, developer unavailability, privacy/security not reviewed, scope creep)
 - Healthcare booking system: client hasn't finalised payment requirements, payment provider dependency, split developer, client unavailability, no security testing, no backup approach
 
+## Applied: your Assignment 1 risk register
+- Real risk register v1 for the PMS Comparison project: [[COMP507 IT Project Management/Assignments/Assignment 1/Templates/9. risk register version 1-final.xlsx|risk register version 1-final.xlsx]] — 3 risks (stakeholder confusion, above word count, above budget), categories used: Third-Party, Scope, Financial (a team-specific RBS variant of the "market, financial, technology, people, structure/process" categories above)
+
 ## Related
 - [[COMP507 IT Project Management/Notes/Week 04 - Stakeholder Management|Week 04]] (risks vs issues) · [[COMP507 IT Project Management/Notes/Week 01 - Introduction to ITPM|Week 01]] (risk register in A1; quantitative risk analysis in A2) · [[COMP507 IT Project Management/Notes/09 - Cost Management|Cost]] (reserves) · [[COMP504 Networks/Notes/Ch11 - Network Security|COMP504 Ch11 risk assessment]] (cross-course) · [[COMP507 IT Project Management/Index|Course index]]

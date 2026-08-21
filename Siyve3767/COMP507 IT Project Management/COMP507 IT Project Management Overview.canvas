@@ -22,7 +22,7 @@
 		{"id":"c53","type":"file","file":"COMP507 IT Project Management/Techbooks/PMBOK Guide (6th ed).ris","x":710,"y":795,"width":300,"height":200},
 		{"id":"c54","type":"file","file":"COMP507 IT Project Management/Techbooks/Beyond the Generalist - Technical Expertise in ITPM.ris","x":710,"y":1020,"width":300,"height":200},
 		{"id":"h55","type":"text","text":"## Other","x":1050,"y":20,"width":300,"height":60},
-		{"id":"c56","type":"file","file":"COMP507 IT Project Management/Assignments/Assignment 1/Business Case.odt","x":1050,"y":120,"width":300,"height":200}
+		{"id":"c56","type":"file","file":"COMP507 IT Project Management/Assignments/Assignment 1/Templates/1. business case.doc","x":1050,"y":120,"width":300,"height":200}
 	],
 	"edges":[
 		{"id":"e57","fromNode":"c48","fromSide":"right","toNode":"c46","toSide":"left","label":"NPV/ROI for the business case"},

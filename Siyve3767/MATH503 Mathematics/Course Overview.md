@@ -39,7 +39,8 @@ tags:
 
 ## How this maps to my notes
 - Weeks 3–6 have notes: [[MATH503 Mathematics/Notes/Week 03 - Conditional Probability|W03 Conditional Probability]], [[MATH503 Mathematics/Notes/Week 04 - Permutations and Counting|W04 Permutations and Counting]], [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|W05 Statistical Measures]], [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|W06 Binomial Distribution]]
-- **Missing**: Weeks 1–2 (sets/Venn) and Weeks 7–12 (hypothesis testing, relations/functions, matrices) — see [[MATH503 Mathematics/Research#5-missing-weeks|Research: Missing weeks]]
+- Week 7 has a **researched (not lecture-sourced) note**: [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|W07 Normal Distribution and Z-Scores]] — verify against the real deck once available
+- **Still missing**: Weeks 1–2 (sets/Venn), Week 7's back half (hypothesis testing), and Weeks 8–12 (relations/functions, matrices) — see [[MATH503 Mathematics/Research#5-missing-weeks|Research: Missing weeks]]
 
 ## Related
 - [[MATH503 Mathematics/Index|Course Index]]

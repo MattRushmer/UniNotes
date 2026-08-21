@@ -65,4 +65,4 @@ tags:
 
 ## Notes elsewhere in this vault
 - Python tooling for EDA in [[COMP517 Data Analysis/Notes/Lab 02 - NumPy and pandas|Lab 02]] and [[COMP517 Data Analysis/Notes/Lab 04 - Univariate Visualisation|Lab 04]]
-- Distribution concepts also appear in [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|MATH503 W05 (statistical measures)]] and [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|MATH503 W06 (binomial)]]; quality-control statistics in [[COMP507 IT Project Management/Notes/08 - Quality Management|COMP507 08 Quality]]
+- Distribution concepts also appear in [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|MATH503 W05 (statistical measures)]], [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|MATH503 W06 (binomial)]], and [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|MATH503 W07 (normal distribution & z-scores)]] — the z-score outlier test (`|z| > 3`) used in Assignment 1's pre-processing step comes straight from W07; quality-control statistics in [[COMP507 IT Project Management/Notes/08 - Quality Management|COMP507 08 Quality]]

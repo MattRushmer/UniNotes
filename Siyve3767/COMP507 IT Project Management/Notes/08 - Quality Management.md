@@ -51,7 +51,7 @@ tags:
 - Certainty factors (z-scores): 95% -> 1.960 . 90% -> 1.645 . 80% -> 1.281
 - One sigma ~ 68.27% certainty, two sigma ~ 95.45%
 - **Six Sigma**: <= 3.4 defects per million opportunities (mathematically 4.5 sigma); **DMAIC** = Define, Measure, Analyze, Improve, Control
-- Bernoulli/Binomial sampling distribution; normal distribution N(mu,sigma) — see [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|MATH503 W06]] and [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|MATH503 W05]]; data-quality angle in [[COMP517 Data Analysis/Notes/Week 03 - Exploratory Data Analysis|COMP517 W03]]
+- Bernoulli/Binomial sampling distribution; normal distribution N(mu,sigma) — see [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|MATH503 W06]], [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|MATH503 W05]], and [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|MATH503 W07 - Normal Distribution and Z-Scores]] (the certainty factors 1.960/1.645/1.281 above are exactly the z-scores for 95%/90%/80% confidence); data-quality angle in [[COMP517 Data Analysis/Notes/Week 03 - Exploratory Data Analysis|COMP517 W03]]
 
 ## Testing
 - Test during almost every phase, not just at the end

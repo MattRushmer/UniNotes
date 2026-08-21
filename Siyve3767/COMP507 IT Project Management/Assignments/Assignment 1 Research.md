@@ -12,11 +12,20 @@ tags:
 > Research companion for **Assignment 1 (Team Wiki Project)**, S2 2026 — worth **50%** of the final grade. Source brief: [[COMP507 IT Project Management/Assignments/Assignment 1/Assignment 1_S2_2026.pdf|Assignment 1_S2_2026.pdf]]. Everything in this note is **synthesis + external sources** — your submitted documents are your own work.
 
 ## The assignment in one paragraph
-Your team plans a **Wiki** that reviews and compares **two cloud-based (SaaS) project management software (PMS)** so ECMS can help R&D students pick one. ECMS will save ~$1.2M/year over 3 years by switching from upfront licenses to a $15/user/year subscription (up to 350 + 150 students/year). Budget: $200,000. The wiki must compare at least one feature per PMBOK process group (Initiating, Planning, Executing, Monitoring/Controlling, Closing). **Microsoft Project is excluded.** Max 4,500 words. Both parts are submitted as one team document each, on Canvas.
+Your team plans a **Wiki** that reviews and compares **two cloud-based (SaaS) project management software (PMS)** so ECMS can help R&D students pick one. ECMS will save ~$1.2M/year over 3 years by switching from upfront licenses to a $15/user/year subscription (up to 350 Sem1 + 150 Sem2 students/year, i.e. up to 500 users/year). Budget: $200,000. The wiki must compare at least one feature per PMBOK process group (Initiating, Planning, Executing, Monitoring/Controlling, Closing). **Microsoft Project is excluded** (though you may investigate MS Project 2021's features to help decide what to compare). Max 4,500 words. Both parts are submitted as one team document each, on Canvas. Team size = **4 students** (self-organised; TAs have final say on numbers/members).
+
+### ✅ Verified against the brief PDF (`Assignment 1_S2_2026.pdf`) — full scenario numbers
+- **PMS usage fee**: $15.00/user/year
+- **Enrolment**: up to 350 students Sem 1 + 150 Sem 2, per academic year through 2027
+- **Internet charge**: $6/student/month in 2025, **rising 10% per year through 2027** — this is a real cost line that belongs in the business case's cost side; it's easy to miss because it's buried in the scenario paragraph, not the checklist
+- **Budget allocated**: $200,000 for the Wiki project itself
+- **Expected savings**: ~$1,200,000/year for 3 years (from dropping upfront PMS licenses in favour of SaaS)
+- **Existing IT infrastructure** for hosting the Wiki + accessing the PMS in labs is stated as **already sufficient** (no extra infrastructure cost to model)
+- **⚠️ Scenario date inconsistency**: the brief's fictional project timeline (planning starts 1 Aug 2025, implementation done 30 Dec 2025, Wiki live 1 Feb 2026 for "Semester 1, 2026") doesn't match the real S2 2026 assignment dates (Part 1 due 23 Aug 2026, Part 2 due 20 Sep 2026) — this looks like a template carried over from a prior year's offering without updating the scenario dates. **Worth asking the lecturer which year to anchor the NPV/financial-year calculations to** (the scenario's 2025/2026/2027, or shifted one year to 2026/2027/2028) before finalising the business case financials.
 
 ## Deadlines
 - **Part 1 — Sun 23 Aug, 11:30pm** (items 1–11): Business case (25), Stakeholder register (5), Stakeholder management strategy (10), Project charter incl. roles & Team Leader (20), Team contract (10), Kick-off meeting agenda + minutes (5), Client meeting agenda + minutes (5), Team meeting agenda + minutes (5), Risk register v1 (5), Issue register v1 (5), Milestone report v1 (5)
-- **Part 2 — Sun 20 Sep, 11:30pm** (items 12–21): Communications management plan (10), Change management plan (15), Scope statement (20), WBS (20), Project schedule — baseline + network diagram + critical path analysis (20), Risk register v2 (5), Issue register v2 (5), Milestone report v2 (5), Lessons-learned report
+- **Part 2 — Sun 20 Sep, 11:30pm** (items 12–20, ✅ verified against the brief PDF): Communications management plan (10), Change management plan (10), Scope statement (15), WBS (20), Project schedule — baseline + network diagram + critical path analysis (20), Risk register v2 (5), Issue register v2 (5), Milestone report v2 (5), Lessons-learned report (10)
 - Peer rating form + group rating form must accompany each part.
 
 ## Research: cloud-based PMS candidates
@@ -74,7 +83,7 @@ Your team plans a **Wiki** that reviews and compares **two cloud-based (SaaS) pr
 - **Smartsheet Pricing** — https://www.smartsheet.com/pricing
 
 ## ⚠️ Flags & to-dos
-1. **Your `Business Case.odt` is currently just a copy of the assignment brief** — it still needs to be written up properly (problem/opportunity, options, costs/benefits, NPV/ROI). Use [[COMP507 IT Project Management/Notes/Tutorial 03 - Business Case ROI Calculation|Tutorial 03]] and the `Templates/business case.doc` + `business case financials.xls` templates.
+1. **Business case is done.** `Templates/1. business case.doc` now has all 10 sections + Exhibit A financial analysis. The stale `Business Case.odt` (only ever had the pasted brief text) has been deleted. One cleanup item remains: Section 8 still has meta-references ("per the brief's stated timeline", "confirm with the lecturer") that should be reworded before submission — see [[COMP507 IT Project Management/Assignments/Assignment 1/Assignment 1 Checklist|checklist]] item 1.
 2. **Pricing changes over time** — re-verify any per-user figures before submitting; cite the date you checked.
 3. **Word limit 4,500** — the wiki content (both PMS) must fit; plan the comparison tables to be information-dense, not wordy.
 4. Verify with your lecturer whether the $15/user/year fee and the 350/150 enrolment figures should appear in your business case calculations (they're given in the brief).

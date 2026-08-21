@@ -40,6 +40,7 @@ tags:
 - [[MATH503 Mathematics/Notes/Week 04 - Permutations and Counting|Week 04 - Permutations and Counting]]
 - [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|Week 05 - Statistical Measures]]
 - [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|Week 06 - Binomial Distribution]]
+- [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|Week 07 - Normal Distribution and Z-Scores]] — ⚠️ researched, not from a lecture (no Week 7 deck in the vault yet)
 - [[MATH503 Mathematics/Notes/Week 04 - Notes (image scan)|Week 04 - Notes (image scan)]]
 
 ## 🔬 Research

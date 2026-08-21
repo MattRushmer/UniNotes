@@ -25,7 +25,7 @@ tags:
 - N = number of trials; p = probability of success; q = 1 - p = probability of failure
 - **Mean**: expected number of successes = Np — the same **expected value** logic drives [[COMP507 IT Project Management/Notes/Week 05 - Risk Management|COMP507 EMV]] and [[COMP507 IT Project Management/Notes/09 - Cost Management|COMP507 earned value]]
 - **Variance**: Np(1-p) = Npq
-- When N is very large, the Binomial is well approximated by the **Normal distribution** (Week 7 topic)
+- When N is very large, the Binomial is well approximated by the **Normal distribution** — see [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|Week 07 - Normal Distribution and Z-Scores]]
 
 ## Bernoulli trials
 - An experiment with only two possible outcomes labeled success (s) and failure (f)

@@ -43,6 +43,9 @@ Week 03 covers **conditional probability** (P(E|F) = P(E and F)/P(F)), independe
 
 ## 2. The normal distribution and z-scores
 
+### Status: ✅ filled (researched note, not yet verified against a real lecture)
+[[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|Week 07 - Normal Distribution and Z-Scores]] now covers the bell curve, μ/σ, the 68-95-99.7 empirical rule, z-score standardization, and reading the standard normal table — written externally since no Week 7 deck exists in the vault. **Still worth checking against the actual Week 7 lecture** once you get it, for notation/terminology your lecturer prefers.
+
 ### Summary
 Week 06 explicitly says the binomial is well approximated by the **Normal distribution "the subject of the week 7 lecture"** — but my vault has **no Week 7 note**. The normal curve, z-scores, and the 68-95-99.7 rule are therefore a promised-but-missing topic. The only sigma/percentile material I have is in COMP507 Quality (z-scores, certainty factors) and COMP517 EDA (normal vs skewed distributions), which both assume it.
 
