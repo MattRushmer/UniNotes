@@ -22,7 +22,7 @@ tags:
 | Meeting called by | Matthew Rushmer |
 | Location / Time | 9:30am, WS Building |
 
-**Attendees:** Matthew Rushmer, Isaiah Thompson, Rahul Shankar, Bradley Ah Sam, Yuki Mon (TA, client contact)
+**Attendees:** Matthew Rushmer, Isaiah Thompson, Rahul Shankar, Bradley Ah Sam, Manpreet Dhanjal (TA, client contact)
 **Absent:** none recorded
 
 **Agenda**
@@ -38,7 +38,7 @@ tags:
 None (first meeting)
 
 **Discussion and Decisions**
-Matthew confirmed the weekly Thursday check-in slot with Yuki as the ongoing TA/client contact. With no project documents produced yet, the discussion stayed high-level: expectations for the check-ins, and a plan to formally assign roles and paperwork once the whole team could meet at the internal kickoff. Rahul and Bradley agreed to start informal PMS research ahead of that kickoff rather than waiting.
+Matthew confirmed the weekly Thursday check-in slot with Manpreet as the ongoing TA/client contact. With no project documents produced yet, the discussion stayed high-level: expectations for the check-ins, and a plan to formally assign roles and paperwork once the whole team could meet at the internal kickoff. Rahul and Bradley agreed to start informal PMS research ahead of that kickoff rather than waiting.
 
 **Summary of Action Items**
 Book and hold the internal team kickoff on 30 July (Matthew). Start informal PMS candidate research ahead of kickoff (Rahul, Bradley). Confirm full team availability for the weekly Thursday slot (All).
@@ -58,7 +58,7 @@ Good first check-in — a locked-in cadence matters more than people think this 
 | Meeting called by | Matthew Rushmer |
 | Location / Time | 9:30am, WS Building |
 
-**Attendees:** Matthew Rushmer, Isaiah Thompson, Rahul Shankar, Yuki Mon (TA, client contact)
+**Attendees:** Matthew Rushmer, Isaiah Thompson, Rahul Shankar, Manpreet Dhanjal (TA, client contact)
 **Absent:** Bradley Ah Same
 
 **Agenda**
@@ -94,7 +94,7 @@ Solid kickoff — clear ownership across the full document list is exactly what 
 | Meeting called by | Rahul Shankar                                         |
 | Location / Time   | 9:43am, WS Building                                   |
 
-**Attendees:** Rahul Shankar, Bradley Ah Sam, Yuki Mon (TA, client contact)
+**Attendees:** Rahul Shankar, Bradley Ah Sam, Manpreet Dhanjal (TA, client contact)
 **Absent:** Matthew Rushmer, Isaiah Thompson
 
 **Agenda**
@@ -130,7 +130,7 @@ This is the meeting I'd flag hardest so far. You spent your team-meeting time re
 | Meeting called by | Matthew Rushmer |
 | Location / Time | 9:21am (already on file in the .doc) |
 
-**Attendees:** Matthew Rushmer, Isaiah Thompson, Yuki Mon (TA, client contact)
+**Attendees:** Matthew Rushmer, Isaiah Thompson, Manpreet Dhanjal (TA, client contact)
 Absent: Rahul Shankar, Bradley Ah Sam
 
 **Agenda**
@@ -166,7 +166,7 @@ Good recovery from last week — Bradley presenting his own drafts instead of ju
 | Meeting called by | Matthew Rushmer              |
 | Location / Time   | 9:15am, WS Building          |
 
-**Attendees:** Matthew Rushmer, Isaiah Thompson, Rahul Shankar, Bradley Ah Sam, Yuki Mon (TA, client contact)
+**Attendees:** Matthew Rushmer, Isaiah Thompson, Rahul Shankar, Bradley Ah Sam, Manpreet Dhanjal (TA, client contact)
 **Absent:** none recorded
 
 **Agenda**
