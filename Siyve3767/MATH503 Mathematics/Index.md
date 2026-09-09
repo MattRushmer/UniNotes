@@ -14,11 +14,17 @@ tags:
 - [[MATH503 Mathematics/Lectures/Week 04 - Lecture.pdf|Week 04 - Lecture]]
 - [[MATH503 Mathematics/Lectures/Week 05 - Lecture.pdf|Week 05 - Lecture]]
 - [[MATH503 Mathematics/Lectures/Week 06 - Lecture.pdf|Week 06 - Lecture]]
+- [[MATH503 Mathematics/Lectures/Week 08 - Lecture.pdf|Week 08 - Lecture]] (Hypothesis Testing) + [[MATH503 Mathematics/Lectures/Week 08 - Important Information.pdf|Week 08 - Important Information]]
+- [[MATH503 Mathematics/Lectures/Week 10 - Lecture.pdf|Week 10 - Lecture]] (Matrices) + [[MATH503 Mathematics/Lectures/Week 10 - Important Information.pdf|Week 10 - Important Information]]
+
+## 🧑🏫 Tutorials
+- [[MATH503 Mathematics/Tutorials/Week 07 - Tutorial (Normal Distribution).pdf|Week 07 - Tutorial (Normal Distribution)]]
+- [[MATH503 Mathematics/Tutorials/Week 08 - Tutorial (Hypothesis Testing).pdf|Week 08 - Tutorial (Hypothesis Testing)]]
 
 ## 📝 Notes
 - [[MATH503 Mathematics/Notes/Week 04 - Notes.pdf|Week 04 - Notes]]
 
-> 💡 *The vault only has notes for Weeks 3–6 so far — see the [[MATH503 Mathematics/Course Overview|Course Overview]] for the full 12-week schedule.*
+> 💡 *The vault has notes for Weeks 3–8 and Week 10 so far — see the [[MATH503 Mathematics/Course Overview|Course Overview]] for the full 12-week schedule. Still missing: Weeks 1–2, 9, 11–12.*
 
 ## 📖 Course Info
 - [[MATH503 Mathematics/Course Overview|Course Overview]]
@@ -27,6 +33,10 @@ tags:
 
 ## 📋 Assignments
 - [[MATH503 Mathematics/Assignments/Week 5 - Group Activity/Week 5 - Group Activity|Week 5 - Group Activity (Old Faithful)]]
+
+## 📌 Dashboard Tasks
+> Real checkboxes — powers the live [[Dashboard]]. Check items off here as they're done.
+- [ ] Final Controlled Assessment — 3 hrs, Weeks 13–15 (date TBA — add `[due:: YYYY-MM-DD]` once confirmed)
 
 ## Suggested tags
 `#math503` `#mathematics`
@@ -39,8 +49,13 @@ tags:
 - [[MATH503 Mathematics/Notes/Week 03 - Conditional Probability|Week 03 - Conditional Probability]]
 - [[MATH503 Mathematics/Notes/Week 04 - Permutations and Counting|Week 04 - Permutations and Counting]]
 - [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|Week 05 - Statistical Measures]]
+- [[MATH503 Mathematics/Notes/Week 05 - Practice Questions|Week 05 - Practice Questions]]
 - [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|Week 06 - Binomial Distribution]]
-- [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|Week 07 - Normal Distribution and Z-Scores]] — ⚠️ researched, not from a lecture (no Week 7 deck in the vault yet)
+- [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|Week 07 - Normal Distribution and Z-Scores]] — ⚠️ researched, not from a lecture (still no Week 7 lecture deck in the vault) — but now confirmed against real course material via the tutorial below
+- [[MATH503 Mathematics/Notes/Week 07 - Tutorial (Normal Distribution)|Week 07 - Tutorial (Normal Distribution)]]
+- [[MATH503 Mathematics/Notes/Week 08 - Hypothesis Testing|Week 08 - Hypothesis Testing]]
+- [[MATH503 Mathematics/Notes/Week 08 - Tutorial (Hypothesis Testing)|Week 08 - Tutorial (Hypothesis Testing)]]
+- [[MATH503 Mathematics/Notes/Week 10 - Matrices|Week 10 - Matrices]]
 - [[MATH503 Mathematics/Notes/Week 04 - Notes (image scan)|Week 04 - Notes (image scan)]]
 
 ## 🔬 Research

@@ -32,6 +32,15 @@ tags:
 ## 📖 Reference
 - [[COMP504 Networks/Reference/VLSM Subnetting - Block Method.pdf|VLSM Subnetting - Block Method]]
 
+## 📌 Dashboard Tasks
+> Real checkboxes — powers the live [[Dashboard]]. Check items off here as they're done; no due date is added unless a real calendar date is known (don't invent one).
+- [x] Week 3 Lab — switch configuration
+- [x] Week 4 Lab — TCP/IP & OSI investigation
+- [ ] Week 8 Lab — default gateway troubleshooting
+- [ ] Week 9 Lab — VLSM addressing design
+- [ ] Week 10 Lab — final Packet Tracer practice
+- [ ] Final Exam — 100 MCQ, closed book (date TBA — add `[due:: YYYY-MM-DD]` once confirmed)
+
 ## Suggested tags
 `#comp504` `#networking` `#subnetting` `#exam-prep`
 

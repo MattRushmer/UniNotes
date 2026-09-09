@@ -39,8 +39,10 @@ tags:
 
 ## How this maps to my notes
 - Weeks 3–6 have notes: [[MATH503 Mathematics/Notes/Week 03 - Conditional Probability|W03 Conditional Probability]], [[MATH503 Mathematics/Notes/Week 04 - Permutations and Counting|W04 Permutations and Counting]], [[MATH503 Mathematics/Notes/Week 05 - Statistical Measures|W05 Statistical Measures]], [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|W06 Binomial Distribution]]
-- Week 7 has a **researched (not lecture-sourced) note**: [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|W07 Normal Distribution and Z-Scores]] — verify against the real deck once available
-- **Still missing**: Weeks 1–2 (sets/Venn), Week 7's back half (hypothesis testing), and Weeks 8–12 (relations/functions, matrices) — see [[MATH503 Mathematics/Research#5-missing-weeks|Research: Missing weeks]]
+- Week 7 has a **researched (not lecture-sourced) note**: [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|W07 Normal Distribution and Z-Scores]] — still no lecture deck, but now backed by a real [[MATH503 Mathematics/Notes/Week 07 - Tutorial (Normal Distribution)|Week 07 tutorial]], which confirms the topic and the `pnorm`/`qnorm` approach
+- **Week 8 now has real lecture + tutorial notes**: [[MATH503 Mathematics/Notes/Week 08 - Hypothesis Testing|W08 Hypothesis Testing]] (population proportion & mean, p-values, rejection regions) and [[MATH503 Mathematics/Notes/Week 08 - Tutorial (Hypothesis Testing)|W08 Tutorial]] — this was the biggest flagged gap in the vault, now closed, and it's what [[COMP517 Data Analysis/Research#3-hypothesis-testing-anova-and-linear-regression|COMP517's hypothesis-testing gap]] needed
+- **Week 10 now has a real lecture note**: [[MATH503 Mathematics/Notes/Week 10 - Matrices|W10 Matrices]] (matrix operations, inverses, transformation matrices)
+- **Still missing**: Weeks 1–2 (sets/Venn), Week 8's power sets/Cartesian product half (self-study, not yet extracted separately), Week 9 (relations and functions), and Week 11 (matrices continued) — see [[MATH503 Mathematics/Research#5-missing-weeks|Research: Missing weeks]]
 
 ## Related
 - [[MATH503 Mathematics/Index|Course Index]]

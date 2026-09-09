@@ -20,6 +20,10 @@ tags:
 - [[COMP517 Data Analysis/Labs/Lab 02 - Tasks.pdf|Lab 02 - Tasks]]
 - [[COMP517 Data Analysis/Labs/Lab 04 - Tasks.pdf|Lab 04 - Tasks]]
 
+## 📌 Dashboard Tasks
+> Real checkboxes — powers the live [[Dashboard]]. Check items off here as they're done.
+- [ ] Assignment 1 — choose dataset, EDA report + code file [due:: 2026-09-11]
+
 ## Suggested tags
 `#comp517` `#data-analysis`
 

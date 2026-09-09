@@ -43,8 +43,8 @@ Week 03 covers **conditional probability** (P(E|F) = P(E and F)/P(F)), independe
 
 ## 2. The normal distribution and z-scores
 
-### Status: ✅ filled (researched note, not yet verified against a real lecture)
-[[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|Week 07 - Normal Distribution and Z-Scores]] now covers the bell curve, μ/σ, the 68-95-99.7 empirical rule, z-score standardization, and reading the standard normal table — written externally since no Week 7 deck exists in the vault. **Still worth checking against the actual Week 7 lecture** once you get it, for notation/terminology your lecturer prefers.
+### Status: ✅ filled and tutorial-verified (still no lecture deck)
+[[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|Week 07 - Normal Distribution and Z-Scores]] covers the bell curve, μ/σ, the 68-95-99.7 empirical rule, z-score standardization, and reading the standard normal table — written externally since no Week 7 lecture deck exists in the vault. It's now backed by a real [[MATH503 Mathematics/Notes/Week 07 - Tutorial (Normal Distribution)|Week 07 tutorial]] (heights, roller-coaster heights, Mensa IQ cutoff, light bulb lifespans — all solved with `pnorm`/`qnorm`), which confirms the topic and R-based approach match what's actually taught. **Still worth checking notation/terminology against the real Week 7 lecture** if you ever get the deck — the tutorial confirms content, not phrasing.
 
 ### Summary
 Week 06 explicitly says the binomial is well approximated by the **Normal distribution "the subject of the week 7 lecture"** — but my vault has **no Week 7 note**. The normal curve, z-scores, and the 68-95-99.7 rule are therefore a promised-but-missing topic. The only sigma/percentile material I have is in COMP507 Quality (z-scores, certainty factors) and COMP517 EDA (normal vs skewed distributions), which both assume it.
@@ -105,14 +105,19 @@ MATH503's own lectures repeatedly motivate probability via **data science and ma
 ## 5. Missing weeks
 
 ### Summary
-My vault only has **Weeks 3-6** notes for MATH503 (conditional probability, counting, statistical measures, binomial). The [[MATH503 Mathematics/Course Overview|Course Overview]] now lists the full 12-week plan, so the gaps are known:
+The vault now has **Weeks 3–8 and Week 10** for MATH503 (conditional probability, counting, statistical measures, binomial, normal distribution, hypothesis testing, matrices). The [[MATH503 Mathematics/Course Overview|Course Overview]] lists the full 12-week plan, so the remaining gaps are known:
 - Missing **Weeks 1-2**: Sets and probability, Venn diagrams
-- Missing **Weeks 7-12**: Probability distributions + hypothesis testing (7-8), relations and functions (9), matrices (10-11), review (12)
+- Missing **Week 8's second half**: power sets and Cartesian product (Sections 5.2-5.3) — flagged in the Week 08 lecture note's housekeeping but not yet extracted as its own content, since the lecture deck itself focused on hypothesis testing
+- Missing **Week 9**: Relations and functions (Sections 5.4-5.5)
+- Missing **Week 11**: Matrices continued (inverse of larger matrices, more transformations)
+- **Week 12**: Review — unlikely to need its own note
 
 The Week 04 Notes PDF is also an image scan with no readable text. **Open question: are these weeks somewhere else in the vault, on Canvas, or not yet released?**
 
 ### Links to existing notes
 - [[MATH503 Mathematics/Notes/Week 04 - Notes (image scan)|Week 04 - Notes (image scan)]] (OCR pending)
+- [[MATH503 Mathematics/Notes/Week 08 - Hypothesis Testing|Week 08 - Hypothesis Testing]] (fills the former Weeks 7-8 hypothesis-testing gap)
+- [[MATH503 Mathematics/Notes/Week 10 - Matrices|Week 10 - Matrices]] (fills the former Weeks 10-11 matrices gap, first half)
 - [[MATH503 Mathematics/Course Overview|Course Overview]] (full 12-week schedule)
 - [[MATH503 Mathematics/Index|Course Index]] (missing-weeks warning)
 - [[MATH503 Mathematics/Notes/Week 06 - Binomial Distribution|Week 06]] (points forward to Week 7)

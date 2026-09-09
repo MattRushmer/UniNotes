@@ -9,6 +9,9 @@ tags:
 
 Your second brain: lecture materials for 4 courses (S2 2026 unless noted). Each course has exactly **one folder**, and each folder starts with an `Index` note listing everything in it.
 
+## 🧭 [[Dashboard]]
+Assignment due dates and a week-by-week summary for all 4 courses, at a glance.
+
 ## Courses
 
 | Course | Folder & index |

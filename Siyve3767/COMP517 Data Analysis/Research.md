@@ -61,12 +61,13 @@ Week 03 lists **noisy data, missing values, and duplicates** as data-quality pro
 
 ## 3. Hypothesis testing, ANOVA, and linear regression
 
-### Summary
-The Week 01 course plan lists **hypothesis testing, ANOVA, and linear regression** as topics, but the vault contains **no notes on any of them** — they are the biggest gap in the course. These are also the topics most likely to feel hard without worked examples. (Note: the deck covering them may not have been uploaded yet, or may be in the S2 2026 materials I have not seen.)
+### Status: hypothesis testing ✅ filled (via MATH503), ANOVA and linear regression still missing
+The Week 01 course plan lists **hypothesis testing, ANOVA, and linear regression** as topics; the vault had **no notes on any of them** — the biggest gap in the course. The **hypothesis-testing** third of that gap is now closed, not from a COMP517 deck but from [[MATH503 Mathematics/Notes/Week 08 - Hypothesis Testing|MATH503 Week 08 - Hypothesis Testing]] (population proportion & mean, p-values, rejection regions, worked examples) and its [[MATH503 Mathematics/Notes/Week 08 - Tutorial (Hypothesis Testing)|tutorial]] — the maths is identical, just taught in MATH503 rather than COMP517. **ANOVA and linear regression remain genuinely unfilled** — no deck covering them has surfaced in either course yet.
 
 ### Links to existing notes
 - [[COMP517 Data Analysis/Notes/Week 01 - Introduction to Data Analysis|Week 01]] (course plan listing these topics)
 - [[COMP517 Data Analysis/Notes/Week 03 - Exploratory Data Analysis|Week 03]] (statistics foundations they build on)
+- [[MATH503 Mathematics/Notes/Week 08 - Hypothesis Testing|MATH503 Week 08 - Hypothesis Testing]] (cross-course — closes the hypothesis-testing third of this gap) and [[MATH503 Mathematics/Notes/Week 07 - Normal Distribution and Z-Scores|MATH503 Week 07 - Normal Distribution and Z-Scores]] (the p-value machinery it depends on)
 
 ### External sources (not from my vault)
 - **Analytics Vidhya: Hypothesis testing for beginners** — null/alternative, p-values, Type I/II errors. https://www.analyticsvidhya.com/blog/2021/07/hypothesis-testing-made-easy-for-the-data-science-beginners/

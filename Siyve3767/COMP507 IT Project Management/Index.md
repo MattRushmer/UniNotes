@@ -29,6 +29,19 @@ tags:
 ## 📂 Case Studies
 - [[COMP507 IT Project Management/Case Studies/Northwest Airlines - Case Study.pdf|Northwest Airlines - Case Study]]
 
+## 📌 Dashboard Tasks
+> Real checkboxes — powers the live [[Dashboard]]. Check items off here as they're done.
+- [ ] Assignment 1 Part 1 — confirm actually submitted on Canvas (recorded 10/11 done as of 22 Aug) [due:: 2026-08-23]
+- [ ] Communications management plan (Part 2, 10 marks) [due:: 2026-09-20]
+- [ ] Change management plan (Part 2, 10 marks) [due:: 2026-09-20]
+- [ ] Scope statement (Part 2, 15 marks) [due:: 2026-09-20]
+- [ ] Work Breakdown Structure / WBS (Part 2, 20 marks) [due:: 2026-09-20]
+- [ ] Project schedule — baseline + network diagram + critical path (Part 2, 20 marks) [due:: 2026-09-20]
+- [ ] Risk register v2 (Part 2, 5 marks) [due:: 2026-09-20]
+- [ ] Issue register v2 (Part 2, 5 marks) [due:: 2026-09-20]
+- [ ] Milestone report v2 (Part 2, 5 marks) [due:: 2026-09-20]
+- [ ] Lessons-learned report (Part 2, 10 marks) [due:: 2026-09-20]
+
 ## Suggested tags
 `#comp507` `#project-management` `#pmbok` `#roi`
 
