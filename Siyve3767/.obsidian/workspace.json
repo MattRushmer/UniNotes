@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "COMP504 Networks/Labs/Lab Submissions/Week 8/Lab Notes - Week 8.md",
+                "file": "COMP517 Data Analysis/Assignments/Assignment 1/Draft 1/Data Cleaning Log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lab Notes - Week 8"
+              "title": "Data Cleaning Log"
             }
           }
         ]
@@ -185,8 +185,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "7af2b2677e88f8ff",
+  "active": "186d0cebe5c10434",
   "lastOpenFiles": [
+    "COMP504 Networks/Labs/Lab Submissions/Week 8/Lab Notes - Week 8.md",
     "COMP517 Data Analysis/Assignments/Assignment 1/Draft 1/air_quality_eda.py.tmp.2080.b994cb2097a6",
     "COMP517 Data Analysis/Assignments/Assignment 1/Draft 1/Data Cleaning Log.md.tmp.2080.12e66989f330",
     "COMP517 Data Analysis/Assignments/Assignment 1/Draft 1/err.txt",
@@ -209,7 +210,6 @@
     "COMP517 Data Analysis/Assignments/Assignment 1/Draft 1/figures/histograms_numeric.png",
     "COMP517 Data Analysis/Assignments/Assignment 1/Draft 1/figures/summary_statistics.csv",
     "COMP517 Data Analysis/Assignments/Assignment 1/Draft 1/run_output.txt",
-    "COMP517 Data Analysis/Assignments/Assignment 1/Draft 1/COMP517 Assignment 1 Report - Draft.docx",
     "Dashboard.md",
     "Home.md",
     "MATH503 Mathematics/Notes/Week 10 - Matrices.md",
@@ -232,7 +232,6 @@
     "MATH503 Mathematics/Notes/Week 05 - Practice Questions.md",
     "COMP507 IT Project Management/Research.md",
     "COMP507 IT Project Management/Assignments/Assignment 1 Research.md",
-    "COMP504 Networks/Labs/Lab Submissions/Week 8/Lab Notes - Week 8.md",
     "COMP507 IT Project Management/COMP507 IT Project Management Overview.canvas",
     "COMP504 Networks/COMP504 Networks Overview.canvas",
     "MATH503 Mathematics/MATH503 Mathematics Overview.canvas",
