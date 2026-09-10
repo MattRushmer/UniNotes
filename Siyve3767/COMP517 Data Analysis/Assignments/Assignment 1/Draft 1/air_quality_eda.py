@@ -1,27 +1,20 @@
-"""
-COMP517 - Data Analysis
-Assignment 1: Data Exploration and Analysis
-Dataset: Global Air Quality 2023 (messy version)
-
-This script performs the full EDA pipeline required by the assignment brief:
-  1. Load and summarise the dataset
-  2. Pre-process (missing values, duplicates, outliers)
-  3. Explore and visualise the clean dataset
-  4. Multivariate analysis (correlation, categorical x categorical, aggregation,
-     temperature -> pollution risk relationship)
-
-All figures are saved to the "figures" folder as PNG files, and all printed
-output is what the accompanying report is based on. Run this file from the
-"Draft 1" folder (it expects the dataset one level up, inside
-"Dataset - Global Air Quality 2023").
-
-Run with:  python air_quality_eda.py
-"""
+# COMP517 Assignment 1 - Data Exploration and Analysis
+# Dataset: Global Air Quality 2023 (messy version)
+#
+# This just runs through the EDA steps we covered in class:
+#   1. load the data and have a look at it
+#   2. clean it up (missing values, duplicates, outliers)
+#   3. explore/visualise the clean data
+#   4. look at a few relationships between variables
+#
+# Everything gets printed to the console (that's what the report is built
+# from) and all the charts get saved into the "figures" folder as PNGs.
+# Run it from inside this "Draft 1" folder with:  python air_quality_eda.py
 
 import os
 
 import matplotlib
-matplotlib.use("Agg")  # save figures to disk without opening windows
+matplotlib.use("Agg")  # don't try to pop up a window, just save the files
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -34,12 +27,15 @@ DATA_PATH = os.path.join(
 FIG_DIR = "figures"
 os.makedirs(FIG_DIR, exist_ok=True)
 
+# grouping these so I'm not retyping the same list of columns everywhere
 POLLUTANTS = ["PM2.5", "PM10", "NO2", "SO2", "CO", "O3"]
 WEATHER = ["Temperature", "Humidity", "Wind Speed"]
 NUMERIC_COLS = POLLUTANTS + WEATHER
 
 
 def savefig(name):
+    # small helper so every plot gets saved the same way instead of
+    # copy-pasting these three lines under every single chart
     path = os.path.join(FIG_DIR, name)
     plt.tight_layout()
     plt.savefig(path, dpi=150, bbox_inches="tight")
@@ -80,49 +76,53 @@ print("\n" + "=" * 70)
 print("2. PRE-PROCESSING")
 print("=" * 70)
 
-# --- 2a. Standardise text fields (case/spacing issues introduced by the
-# "messy" generator) before doing anything else, so that "SYDNEY", " Sydney",
-# "sydney " etc. are treated as the same city.
+# --- 2a. Clean up City/Country text -----------------------------------------
+# the "messy" dataset has stuff like "SYDNEY", " Sydney", "sydney " all as
+# separate values, so strip the spaces and make the case consistent first
 print("\nUnique City values before cleaning:", df["City"].nunique())
 print("Unique Country values before cleaning:", df["Country"].nunique())
 
-# Note: no .astype(str) here on purpose -- casting to str before cleaning
-# would turn any real missing City/Country value into the literal string
-# "nan", which would then silently pass the isnull() check in Step 2c below
-# and never get imputed. Both columns are already string-typed by
-# pd.read_csv wherever a value exists, so .str.strip()/.str.title() work
-# directly and leave genuine NaNs as NaN for Step 2c to handle.
 df["City"] = df["City"].str.strip().str.title()
 df["Country"] = df["Country"].str.strip().str.title()
 
-# .str.title() mangles country acronyms (UAE -> Uae, UK -> Uk, USA -> Usa);
-# restore the correct acronym casing for known cases.
+# .title() also wrecks acronyms like UAE/UK/USA (turns them into
+# Uae/Uk/Usa), so fix those specific ones back up manually
 ACRONYM_FIX = {"Uae": "UAE", "Uk": "UK", "Usa": "USA"}
 df["Country"] = df["Country"].replace(ACRONYM_FIX)
 
 print("Unique City values after cleaning:", df["City"].nunique())
 print("Unique Country values after cleaning:", df["Country"].nunique())
 
-# --- 2b. Parse Date (format is M/D/YYYY, confirmed by values such as 10/27
-# which cannot be interpreted as D/M since there is no 27th month)
+# --- 2b. Parse the Date column ----------------------------------------------
+# dates are in M/D/YYYY format (you can tell because some values like 10/27
+# only make sense if the first number is the month)
 df["Date"] = pd.to_datetime(df["Date"], format="%m/%d/%Y", errors="coerce")
 print("\nRows where Date failed to parse:", df["Date"].isna().sum())
-df["Quarter"] = df["Date"].dt.month % 12 // 3 + 1
-# Hemisphere-neutral labels: the dataset mixes Northern-Hemisphere countries
-# (USA, Canada, Germany, ...) and Southern-Hemisphere countries (South
-# Africa, Australia, ...), so calendar "Summer/Winter" season names would be
-# correct for one group and backwards for the other. Grouping by calendar
-# quarter (month range only, no hemisphere-specific season name) avoids
-# that ambiguity while still testing for any time-of-year pattern.
-quarter_map = {1: "Q1: Dec-Feb", 2: "Q2: Mar-May",
-               3: "Q3: Jun-Aug", 4: "Q4: Sep-Nov"}
-df["Quarter"] = df["Quarter"].map(quarter_map)
 
-# --- 2c. Missing values -----------------------------------------------------
+
+def month_to_quarter(month):
+    # grouping months into calendar quarters instead of "Summer/Winter"
+    # since the countries in this dataset are on both sides of the equator,
+    # so a season name would be wrong for half of them
+    if month in (12, 1, 2):
+        return "Q1: Dec-Feb"
+    elif month in (3, 4, 5):
+        return "Q2: Mar-May"
+    elif month in (6, 7, 8):
+        return "Q3: Jun-Aug"
+    else:
+        return "Q4: Sep-Nov"
+
+
+df["Quarter"] = df["Date"].dt.month.apply(month_to_quarter)
+
+# --- 2c. Missing values ------------------------------------------------------
 print("\n--- Handling missing values ---")
 missing_before = df.isnull().sum()
 print(missing_before[missing_before > 0])
 
+# only the 6 pollutant columns have gaps, so just loop over NUMERIC_COLS and
+# skip anything that's already complete
 for col in NUMERIC_COLS:
     if df[col].isnull().sum() == 0:
         print(f"{col}: no missing values, skipped")
@@ -130,38 +130,32 @@ for col in NUMERIC_COLS:
     skew = df[col].skew()
     print(f"{col}: skew={skew:.2f} -> using {'median' if abs(skew) > 0.5 else 'mean'}")
 
-# Impute per-Country rather than with one global statistic. A single global
-# fill value gets repeated across every country's subgroup, which pins every
-# country's *median* to that same imputed number once enough rows share it
-# (verified: with a global fill, 9 of 10 top countries showed an identical
-# PM2.5 median of 77.65, masking real country-to-country differences that
-# only reappear once imputation is done within each country's own values).
+# filling with a country-level average instead of one overall average -
+# otherwise every country ends up sharing the exact same filled-in number,
+# which flattens out any real difference between countries
 for col in NUMERIC_COLS:
     if df[col].isnull().sum() == 0:
         continue
     skew = df[col].skew()
-    method = "median" if abs(skew) > 0.5 else "mean"
-    if method == "median":
-        df[col] = df[col].fillna(df.groupby("Country")[col].transform("median"))
+    if abs(skew) > 0.5:
+        method = "median"
+        country_avg = df.groupby("Country")[col].median()
     else:
-        df[col] = df[col].fillna(df.groupby("Country")[col].transform("mean"))
-    # Backstop in case any country's own subgroup were entirely missing for
-    # this column (not the case here, but avoids a silent leftover NaN).
-    df[col] = df[col].fillna(df[col].mean())
+        method = "mean"
+        country_avg = df.groupby("Country")[col].mean()
+    df[col] = df[col].fillna(df["Country"].map(country_avg))
+    df[col] = df[col].fillna(df[col].mean())  # just in case, shouldn't trigger
     print(f"  filled {col} missing values with per-Country {method}")
 
-# Categorical missing values, if any: mode for City/Country.
+# City/Country themselves don't have gaps in this dataset, but check anyway
 for col in ["City", "Country"]:
     if df[col].isnull().sum() > 0:
         mode_val = df[col].mode()[0]
         df[col] = df[col].fillna(mode_val)
         print(f"  filled {col} missing values with mode ({mode_val})")
 
-# Date: the rows in this dataset are shuffled (not sorted by city or by
-# date), so there is no meaningful order to interpolate a missing date
-# from -- positionally interpolating between two unrelated cities' dates
-# would produce a fabricated timestamp. Rows with an unparseable date are
-# dropped instead, since a date cannot be safely guessed here.
+# rows are in random order (not sorted by city/date), so there's no sensible
+# neighbouring value to guess a missing date from - just drop those rows
 if df["Date"].isnull().sum() > 0:
     before = df["Date"].isnull().sum()
     df = df.dropna(subset=["Date"])
@@ -170,7 +164,7 @@ if df["Date"].isnull().sum() > 0:
 print("\nMissing values after cleaning:")
 print(df.isnull().sum())
 
-# --- 2d. Duplicates ----------------------------------------------------------
+# --- 2d. Duplicates -----------------------------------------------------------
 print("\n--- Handling duplicates ---")
 exact_dupes = df.duplicated().sum()
 print(f"Exact duplicate rows (all columns identical): {exact_dupes}")
@@ -181,10 +175,9 @@ print(f"Rows sharing the same City+Country+Date: {key_dupes}")
 df = df.drop_duplicates()
 print(f"Shape after dropping exact duplicates: {df.shape}")
 
-# --- 2e. Outliers -------------------------------------------------------------
-# Physical-validity filter is applied first, so the IQR bounds computed
-# below are based on the same final dataset used everywhere downstream
-# (avoids computing bounds on one version of df and plotting another).
+# --- 2e. Outliers ---------------------------------------------------------------
+# get rid of physically impossible readings first, before working out the
+# outlier bounds below (otherwise the bounds and the plots wouldn't match)
 before_rows = len(df)
 df = df[(df["Humidity"] >= 0) & (df["Humidity"] <= 100)]
 df = df[(df["Wind Speed"] >= 0)]
@@ -192,27 +185,26 @@ print(f"\nRemoved {before_rows - len(df)} rows with physically impossible "
       f"Humidity/Wind Speed values")
 
 print("\n--- Handling outliers (IQR method) ---")
-outlier_summary = {}
 outlier_masks = {}
 for col in NUMERIC_COLS:
     q1, q3 = df[col].quantile([0.25, 0.75])
     iqr = q3 - q1
     lower, upper = q1 - 1.5 * iqr, q3 + 1.5 * iqr
     mask = (df[col] < lower) | (df[col] > upper)
-    outlier_summary[col] = mask.sum()
     outlier_masks[col] = mask
     print(f"{col}: {mask.sum()} outliers (bounds: {lower:.2f} to {upper:.2f})")
 
-# Cross-check with z-score on PM2.5 (most safety-critical pollutant)
-z = (df["PM2.5"] - df["PM2.5"].mean()) / df["PM2.5"].std()
-print(f"\nPM2.5 z-score outliers (|z|>3): {(z.abs() > 3).sum()}")
+# double check PM2.5 with the z-score method too since it's the pollutant
+# that matters most for health (from MATH503 - anything with |z| > 3)
+z_scores = (df["PM2.5"] - df["PM2.5"].mean()) / df["PM2.5"].std()
+print(f"\nPM2.5 z-score outliers (|z|>3): {(z_scores.abs() > 3).sum()}")
 
-# Decision: pollutant outliers are kept (real pollution spikes are the most
-# important events in an air-quality dataset); no pollutant values were
-# removed or transformed on outlier grounds.
+# both methods agree there aren't really any outliers here, so nothing gets
+# removed on outlier grounds - a real pollution spike is exactly the kind of
+# thing we'd want to keep, not throw away
 
-# Scatterplots: outlier vs non-outlier points for the two headline
-# pollutants, reusing the masks computed above rather than recomputing them.
+# scatter plot of outlier vs non-outlier points, just for the two pollutants
+# people usually care about most
 for col in ["PM2.5", "PM10"]:
     is_outlier = outlier_masks[col]
 
@@ -227,7 +219,7 @@ for col in ["PM2.5", "PM10"]:
     plt.legend()
     savefig(f"outliers_{col.replace('.', '')}.png")
 
-# Boxplots for all pollutants together (spread + outliers)
+# boxplots of all the pollutants together, another way to see spread/outliers
 plt.figure(figsize=(10, 6))
 sns.boxplot(data=df[POLLUTANTS])
 plt.title("Boxplots of Pollutant Concentrations (Outlier Detection)")
@@ -249,7 +241,7 @@ summary_stats = summary_stats.rename(columns={"50%": "median"})
 print(summary_stats)
 summary_stats.to_csv(os.path.join(FIG_DIR, "summary_statistics.csv"))
 
-# Histograms for numeric columns
+# histograms for every numeric column, one grid of subplots
 fig, axes = plt.subplots(3, 3, figsize=(14, 10))
 for ax, col in zip(axes.flat, NUMERIC_COLS):
     sns.histplot(df[col], kde=True, ax=ax, color="teal")
@@ -257,10 +249,10 @@ for ax, col in zip(axes.flat, NUMERIC_COLS):
     ax.set_xlabel(col)
     ax.set_ylabel("Frequency")
 for ax in axes.flat[len(NUMERIC_COLS):]:
-    ax.axis("off")
+    ax.axis("off")  # hides the last empty subplot (9 slots, only 9 cols so fine, but just in case)
 savefig("histograms_numeric.png")
 
-# Bar chart: record count by top 10 countries
+# bar chart - which countries have the most records
 plt.figure(figsize=(10, 6))
 top_countries = df["Country"].value_counts().head(10)
 sns.barplot(x=top_countries.values, y=top_countries.index, hue=top_countries.index,
@@ -270,7 +262,7 @@ plt.xlabel("Number of Records")
 plt.ylabel("Country")
 savefig("bar_top_countries.png")
 
-# Pie chart: record share by calendar quarter
+# pie chart - how records are split across the calendar quarters
 plt.figure(figsize=(8, 6))
 quarter_counts = df["Quarter"].value_counts().sort_index()
 wedges, _, _ = plt.pie(quarter_counts.values, autopct="%1.1f%%", pctdistance=0.8,
@@ -280,7 +272,7 @@ plt.legend(wedges, quarter_counts.index, title="Quarter",
            loc="center left", bbox_to_anchor=(1.0, 0.5))
 savefig("pie_quarter_share.png")
 
-# Box plots for weather variables
+# boxplots for the weather variables
 plt.figure(figsize=(10, 6))
 sns.boxplot(data=df[WEATHER])
 plt.title("Boxplots of Weather Variables")
@@ -301,6 +293,7 @@ corr = df[NUMERIC_COLS].corr()
 print("\nCorrelation matrix:")
 print(corr.round(2))
 
+# quick loop through the matrix to pull out anything worth mentioning
 strong_pairs = []
 for i in range(len(corr.columns)):
     for j in range(i + 1, len(corr.columns)):
@@ -315,15 +308,11 @@ sns.heatmap(corr, annot=True, fmt=".2f", cmap="coolwarm", center=0,
 plt.title("Correlation Heatmap of Pollutant and Weather Variables")
 savefig("correlation_heatmap.png")
 
-# --- 4b. Categorical x categorical -> record count ---
-# Rationale: Country and Quarter are both meaningful categorical groupings
-# for an air-quality dataset (do certain countries have more/fewer records
-# in certain parts of the year?), and every row is one record, so a
-# Country x Quarter count grid is a genuine "how does count vary across two
-# categorical variables" plot.
+# --- 4b. Categorical x categorical: record counts by Country and Quarter ---
+# just seeing if some countries reported a lot more in certain quarters
 top5_countries = df["Country"].value_counts().head(5).index
-cross = pd.crosstab(df[df["Country"].isin(top5_countries)]["Country"],
-                     df[df["Country"].isin(top5_countries)]["Quarter"])
+top5_df = df[df["Country"].isin(top5_countries)]
+cross = top5_df.groupby(["Country", "Quarter"]).size().unstack(fill_value=0)
 print("\nRecord counts, Country (top 5) x Quarter:")
 print(cross)
 
@@ -335,17 +324,18 @@ plt.ylabel("Country")
 savefig("heatmap_country_quarter_count.png")
 
 # --- 4c. Aggregation: mean & median PM2.5 by Country (top 10 by volume) ---
-agg = (df[df["Country"].isin(df["Country"].value_counts().head(10).index)]
+top10_countries = df["Country"].value_counts().head(10).index
+agg = (df[df["Country"].isin(top10_countries)]
        .groupby("Country")["PM2.5"].agg(["mean", "median"]).round(2)
        .sort_values("mean", ascending=False))
 print("\nMean and median PM2.5 by Country (top 10 by record volume):")
 print(agg)
 agg.to_csv(os.path.join(FIG_DIR, "aggregation_pm25_by_country.csv"))
 
-agg_plot = agg.reset_index().melt(id_vars="Country", value_vars=["mean", "median"],
-                                   var_name="Statistic", value_name="PM2.5")
+# pandas can plot mean/median as grouped bars straight off the dataframe,
+# no need to reshape anything
 plt.figure(figsize=(11, 6))
-sns.barplot(data=agg_plot, x="Country", y="PM2.5", hue="Statistic")
+agg.plot(kind="bar", ax=plt.gca())
 plt.title("Mean vs Median PM2.5 by Country")
 plt.xlabel("Country")
 plt.ylabel("PM2.5 Concentration")
@@ -353,16 +343,14 @@ plt.xticks(rotation=30, ha="right")
 plt.legend(title="Statistic")
 savefig("bar_agg_pm25_by_country.png")
 
-# --- 4d. Temperature -> Air Quality Risk relationship (BMI -> risk analogue)
-# Build a standard EPA-style PM2.5 risk category (like a "diabetes risk
-# score"), then examine how it responds to Temperature (like "BMI"),
-# analogous to the brief's "credit score range -> loan approval" /
-# "BMI -> diabetes risk score" question.
-# Breakpoints are the EPA's current 24-hour PM2.5 AQI breakpoints (in effect
-# since the 6 May 2024 AQI revision, source: EPA AQS breakpoint table,
-# https://aqs.epa.gov/aqsweb/documents/codetables/aqi_breakpoints.csv) --
-# NOT the older pre-2024 breakpoints (which used 12/35.4/55.4/150.4/250.4)
-# still widely quoted online.
+# --- 4d. Does Temperature affect the Air Quality Risk score? ---
+# turning PM2.5 into a risk category is basically the same idea as turning
+# BMI into a diabetes risk category from the lecture examples. Breakpoints
+# below are the EPA's current PM2.5 AQI breakpoints (updated May 2024 -
+# double checked these against the EPA breakpoint table since a lot of
+# pages online still show the older, pre-2024 numbers).
+
+
 def pm25_risk(value):
     if value <= 9.0:
         return "Good"
@@ -378,24 +366,46 @@ def pm25_risk(value):
         return "Hazardous"
 
 
-risk_order = ["Good", "Moderate", "Unhealthy (Sensitive)", "Unhealthy",
-              "Very Unhealthy", "Hazardous"]
-df["AQ_Risk_Category"] = pd.Categorical(df["PM2.5"].apply(pm25_risk),
-                                         categories=risk_order, ordered=True)
-df["AQ_Risk_Score"] = df["AQ_Risk_Category"].cat.codes + 1  # 1 (Good) - 6 (Hazardous)
+# turning the risk category into a 1-6 score just with a plain dictionary,
+# so it can be averaged/plotted like a normal number
+RISK_SCORE = {
+    "Good": 1,
+    "Moderate": 2,
+    "Unhealthy (Sensitive)": 3,
+    "Unhealthy": 4,
+    "Very Unhealthy": 5,
+    "Hazardous": 6,
+}
+df["AQ_Risk_Category"] = df["PM2.5"].apply(pm25_risk)
+df["AQ_Risk_Score"] = df["AQ_Risk_Category"].map(RISK_SCORE)
 
-temp_bins = [-30, 0, 10, 20, 30, 50]
-temp_labels = ["<0C", "0-10C", "10-20C", "20-30C", ">30C"]
-df["Temperature_Band"] = pd.cut(df["Temperature"], bins=temp_bins, labels=temp_labels)
 
-risk_by_temp = df.groupby("Temperature_Band", observed=True)["AQ_Risk_Score"].agg(
-    ["mean", "std", "median"]).round(2)
+def temperature_band(temp):
+    # same idea as month_to_quarter above, just bucketing temperature
+    # instead of bucketing months
+    if temp <= 0:
+        return "<0C"
+    elif temp <= 10:
+        return "0-10C"
+    elif temp <= 20:
+        return "10-20C"
+    elif temp <= 30:
+        return "20-30C"
+    else:
+        return ">30C"
+
+
+df["Temperature_Band"] = df["Temperature"].apply(temperature_band)
+temp_order = ["<0C", "0-10C", "10-20C", "20-30C", ">30C"]
+
+risk_by_temp = df.groupby("Temperature_Band")["AQ_Risk_Score"].agg(
+    ["mean", "std", "median"]).round(2).reindex(temp_order)
 print("\nAir Quality Risk Score by Temperature Band:")
 print(risk_by_temp)
 risk_by_temp.to_csv(os.path.join(FIG_DIR, "risk_score_by_temperature_band.csv"))
 
 plt.figure(figsize=(9, 6))
-sns.boxplot(data=df, x="Temperature_Band", y="AQ_Risk_Score", order=temp_labels,
+sns.boxplot(data=df, x="Temperature_Band", y="AQ_Risk_Score", order=temp_order,
             hue="Temperature_Band", palette="coolwarm", legend=False)
 plt.title("Air Quality Risk Score by Temperature Band\n"
           "(1=Good ... 6=Hazardous)")
