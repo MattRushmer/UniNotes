@@ -1,0 +1,237 @@
+
+======================================================================
+1. LOAD AND SUMMARISE
+======================================================================
+
+Shape: 30450 rows x 12 columns
+
+First 5 rows:
+           City       Country        Date  ...  Temperature  Humidity  Wind Speed
+0  Johannesburg  South Africa   4/10/2023  ...        27.46     51.14       10.26
+1      Istanbul        Turkey   4/22/2023  ...        10.58     30.48       14.45
+2        Berlin       Germany  10/27/2023  ...        -4.09     96.90        2.49
+3        SYDNEY     Australia   6/10/2023  ...        17.41     64.79       12.77
+4         Dubai           UAE   7/23/2023  ...        13.11     31.61        5.00
+
+[5 rows x 12 columns]
+
+Column dtypes:
+City               str
+Country            str
+Date               str
+PM2.5          float64
+PM10           float64
+NO2            float64
+SO2            float64
+CO             float64
+O3             float64
+Temperature    float64
+Humidity       float64
+Wind Speed     float64
+dtype: object
+
+df.info():
+<class 'pandas.DataFrame'>
+RangeIndex: 30450 entries, 0 to 30449
+Data columns (total 12 columns):
+ #   Column       Non-Null Count  Dtype  
+---  ------       --------------  -----  
+ 0   City         30450 non-null  str    
+ 1   Country      30450 non-null  str    
+ 2   Date         30450 non-null  str    
+ 3   PM2.5        28898 non-null  float64
+ 4   PM10         28889 non-null  float64
+ 5   NO2          28857 non-null  float64
+ 6   SO2          28975 non-null  float64
+ 7   CO           28954 non-null  float64
+ 8   O3           28850 non-null  float64
+ 9   Temperature  30450 non-null  float64
+ 10  Humidity     30450 non-null  float64
+ 11  Wind Speed   30450 non-null  float64
+dtypes: float64(9), str(3)
+memory usage: 2.8 MB
+
+Missing values per column:
+City              0
+Country           0
+Date              0
+PM2.5          1552
+PM10           1561
+NO2            1593
+SO2            1475
+CO             1496
+O3             1600
+Temperature       0
+Humidity          0
+Wind Speed        0
+dtype: int64
+
+Missing values as % of rows:
+City           0.00
+Country        0.00
+Date           0.00
+PM2.5          5.10
+PM10           5.13
+NO2            5.23
+SO2            4.84
+CO             4.91
+O3             5.25
+Temperature    0.00
+Humidity       0.00
+Wind Speed     0.00
+dtype: float64
+
+======================================================================
+2. PRE-PROCESSING
+======================================================================
+
+Unique City values before cleaning: 120
+Unique Country values before cleaning: 19
+Unique City values after cleaning: 20
+Unique Country values after cleaning: 19
+
+Rows where Date failed to parse: 0
+
+--- Handling missing values ---
+PM2.5    1552
+PM10     1561
+NO2      1593
+SO2      1475
+CO       1496
+O3       1600
+dtype: int64
+PM2.5: skew=-0.02 -> using mean
+PM10: skew=0.01 -> using mean
+NO2: skew=-0.01 -> using mean
+SO2: skew=0.01 -> using mean
+CO: skew=0.00 -> using mean
+O3: skew=0.00 -> using mean
+Temperature: no missing values, skipped
+Humidity: no missing values, skipped
+Wind Speed: no missing values, skipped
+  filled PM2.5 missing values with per-Country mean
+  filled PM10 missing values with per-Country mean
+  filled NO2 missing values with per-Country mean
+  filled SO2 missing values with per-Country mean
+  filled CO missing values with per-Country mean
+  filled O3 missing values with per-Country mean
+
+Missing values after cleaning:
+City           0
+Country        0
+Date           0
+PM2.5          0
+PM10           0
+NO2            0
+SO2            0
+CO             0
+O3             0
+Temperature    0
+Humidity       0
+Wind Speed     0
+Quarter        0
+dtype: int64
+
+--- Handling duplicates ---
+Exact duplicate rows (all columns identical): 13897
+Rows sharing the same City+Country+Date: 25375
+Shape after dropping exact duplicates: (16553, 13)
+
+Removed 0 rows with physically impossible Humidity/Wind Speed values
+
+--- Handling outliers (IQR method) ---
+PM2.5: 0 outliers (bounds: -53.02 to 208.31)
+PM10: 0 outliers (bounds: -67.83 to 276.97)
+NO2: 0 outliers (bounds: -33.45 to 136.84)
+SO2: 0 outliers (bounds: -18.61 to 69.20)
+CO: 0 outliers (bounds: -3.98 to 13.98)
+O3: 0 outliers (bounds: -67.58 to 277.94)
+Temperature: 0 outliers (bounds: -35.41 to 65.07)
+Humidity: 0 outliers (bounds: -35.04 to 144.37)
+Wind Speed: 0 outliers (bounds: -9.19 to 29.66)
+
+PM2.5 z-score outliers (|z|>3): 0
+  saved figures\outliers_PM25.png
+  saved figures\outliers_PM10.png
+  saved figures\boxplot_pollutants.png
+
+======================================================================
+3. EXPLORE AND VISUALISE THE CLEAN DATASET
+======================================================================
+
+Summary statistics (numeric columns):
+               count        mean        std  ...      median     75%     max
+PM2.5        16553.0   77.794961  40.070185  ...   78.120000  110.31  149.98
+PM10         16553.0  104.403820  52.549195  ...  103.666520  147.67  200.00
+NO2          16553.0   52.082399  25.972378  ...   52.164152   72.98  100.00
+SO2          16553.0   25.290254  13.428151  ...   25.250453   36.27   49.99
+CO           16553.0    5.043313   2.728292  ...    5.030322    7.25   10.00
+O3           16553.0  105.365250  52.486696  ...  105.925589  148.37  200.00
+Temperature  16553.0   14.931461  14.467356  ...   14.880000   27.39   40.00
+Humidity     16553.0   54.744490  25.974530  ...   54.580000   77.09   99.99
+Wind Speed   16553.0   10.277290   5.615799  ...   10.370000   15.09   20.00
+
+[9 rows x 8 columns]
+  saved figures\histograms_numeric.png
+  saved figures\bar_top_countries.png
+  saved figures\pie_quarter_share.png
+  saved figures\boxplot_weather.png
+
+======================================================================
+4. MULTIVARIATE ANALYSIS
+======================================================================
+
+Correlation matrix:
+             PM2.5  PM10   NO2   SO2  ...    O3  Temperature  Humidity  Wind Speed
+PM2.5         1.00  0.02  0.00 -0.01  ...  0.01        -0.02     -0.00        0.01
+PM10          0.02  1.00  0.01 -0.01  ... -0.00         0.01      0.00        0.01
+NO2           0.00  0.01  1.00  0.00  ...  0.02        -0.01      0.00        0.00
+SO2          -0.01 -0.01  0.00  1.00  ... -0.00        -0.00     -0.00        0.00
+CO            0.01  0.01  0.00  0.02  ...  0.01        -0.02      0.01       -0.01
+O3            0.01 -0.00  0.02 -0.00  ...  1.00         0.01      0.00       -0.02
+Temperature  -0.02  0.01 -0.01 -0.00  ...  0.01         1.00      0.00       -0.00
+Humidity     -0.00  0.00  0.00 -0.00  ...  0.00         0.00      1.00       -0.01
+Wind Speed    0.01  0.01  0.00  0.00  ... -0.02        -0.00     -0.01        1.00
+
+[9 rows x 9 columns]
+
+Strong correlations (|r| > 0.7): None found
+  saved figures\correlation_heatmap.png
+
+Record counts, Country (top 5) x Quarter:
+Quarter       Q1: Dec-Feb  Q2: Mar-May  Q3: Jun-Aug  Q4: Sep-Nov
+Country                                                         
+Canada                216          221          196          235
+India                 224          237          215          218
+South Africa          193          230          234          227
+UAE                   238          220          200          222
+USA                   384          417          376          388
+  saved figures\heatmap_country_quarter_count.png
+
+Mean and median PM2.5 by Country (top 10 by record volume):
+               mean  median
+Country                    
+UAE           80.24   78.75
+India         79.32   78.69
+Thailand      78.70   78.66
+South Africa  78.28   78.24
+USA           77.19   76.79
+Germany       77.08   77.04
+Canada        76.72   76.11
+South Korea   76.06   77.23
+Egypt         75.95   74.59
+Spain         75.47   75.32
+  saved figures\bar_agg_pm25_by_country.png
+
+Air Quality Risk Score by Temperature Band:
+                  mean   std  median
+Temperature_Band                    
+<0C               3.68  1.00     4.0
+0-10C             3.59  1.03     4.0
+10-20C            3.62  1.01     4.0
+20-30C            3.64  0.99     4.0
+>30C              3.58  1.04     4.0
+  saved figures\boxplot_risk_by_temperature.png
+
+All figures and summary tables saved to the 'figures' folder.
+EDA pipeline complete.
