@@ -58,14 +58,14 @@ tags:
 | 🟥 | 12 | **Communications management plan** | 10 | ❌ Not started | No template |
 | 🟥 | 13 | **Change management plan** | 10 | ❌ Not started | No template |
 | 🟥 | 14 | **Scope statement** | 15 | ❌ Not started | No template — **must clearly state the quality goals** (brief requirement) |
-| 🟥 | 15 | **Work Breakdown Structure (WBS)** | 20 | ❌ Not started | No template |
-| 🟥 | 16 | **Project schedule** (a. schedule baseline with activities/durations/milestones · b. network diagram · c. critical path analysis + discussion) | 20 | ❌ Not started | No template |
+| 🟨Mine | 15 | **Work Breakdown Structure (WBS)** | 20 | 🟨 Full draft ready | [[Assingment 1 Part 2/15-16. WBS and Project Schedule.docx|15-16. WBS and Project Schedule.docx]] — formatted Word doc (matches the Templates/ header style), 5-phase/25-work-package WBS + dictionary. Markdown source: [[Assingment 1 Part 2/WBS and Project Schedule (ready to paste)]]. Team should review/sign off before final submission. |
+| 🟨Mine | 16 | **Project schedule** (a. schedule baseline with activities/durations/milestones · b. network diagram · c. critical path analysis + discussion) | 20 | 🟨 Full draft ready | Same docx: schedule baseline table, an MS Project–style Gantt chart image, an Activity-on-Node network diagram image (both generated from the CPM data, not screenshots), and full critical-path analysis (21-activity critical path, float table, effect-of-changes discussion). |
 | 🟥 | 17 | **Risk register (v2)** | 5 | ❌ Not started | Update [[Templates/9. risk register version 1-final.xlsx]] → save as v2 |
 | 🟥 | 18 | **Issue register (v2)** | 5 | ❌ Not started | Update [[Templates/10 issue log version 1.xls]] → save as v2 |
 | 🟥 | 19 | **Milestone report (v2)** | 5 | ❌ Not started | Update [[Templates/11. milestone report.doc]] → save as v2 |
 | 🟥 | 20 | **Lessons-learned report** | 10 | ❌ Not started | No template |
 
-**Part 2 progress:** 0 / 9 complete
+**Part 2 progress:** 0 / 9 complete, 2 / 9 drafted (items 15 & 16 — WBS and Project Schedule — have full drafts ready for team review)
 
 ---
 
